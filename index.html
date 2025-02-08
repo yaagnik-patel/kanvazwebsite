@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanishk Jewelry Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sticky-container">
+    <div class="header">
+<<<<<<< HEAD
+        <img src="image\final.png" alt="Kanishk Logo" class="logo">
+=======
+        <img src="image/final.png" alt="Kanishk Logo" class="logo">
+>>>>>>> 62ba0650a37d8ae099c92b96d2de83d58b439559
+        <div class="cart-icon-container">
+            <div class="cart-icon" onclick="viewCart()">
+                <img src="cart-icon.png" alt="Cart" class="cart-icon-img">
+                <span id="cart-count" class="cart-count">0</span>
+            </div>
+        </div>
+    </div>
+    <div class="announcement-bar bg_violet">
+        <div class="wrap-announcement-bar">
+            <div class="box-sw-announcement-bar speed-1">
+                <div class="announcement-bar-item">
+                    <p>FREE SHIPPING AND RETURNS</p>
+                </div>
+                <div class="announcement-bar-item">
+                    <p>NEW SEASON, NEW STYLES: FASHION SALE YOU CAN'T MISS</p>
+                </div>
+                <div class="announcement-bar-item">
+                    <p>LIMITED TIME OFFER: FASHION SALE YOU CAN'T RESIST</p>
+                </div>
+            </div>
+        </div>
+        <span class="icon-close close-announcement-bar"></span>
+    </div>
+</div>
+<!-- Categories Section -->
+<section class="categories">
+    <div class="categories-wrapper">
+        <div class="category-item" onclick="showCategory('polaroid')">
+            <img src="images/brooches-icon.jpg" alt="Polaroid Photo">
+            <p>Polaroid Photos</p>
+        </div>
+        <div class="category-item" onclick="showCategory('Car')">
+            <img src="image/Product/CAT-image/CAR 1.png" alt="Polaroid Photo">
+            <p>Car Posters</p>
+        </div>
+        <div class="category-item" onclick="showCategory('anime')">
+            <img src="image/Product/CAT-image/ANIME 1.png" alt="Anime Posters">
+            <p>Anime Posters</p>
+        </div>
+        <div class="category-item" onclick="showCategory('music')">
+            <img src="image/Product/CAT-image/MUSIC1.png" alt="Music Posters">
+            <p>Music Posters</p>
+        </div>
+        <div class="category-item" onclick="showCategory('movie')">
+            <img src="image/Product/CAT-image/MOVIE 1.png" alt="Movie Posters">
+            <p>Movie Posters</p>
+        </div>
+        <div class="category-item" onclick="showCategory('sports')">
+            <img src="image/Product/CAT-image/MOTIVATION 1.png" alt="Sports Posters">
+            <p>Motivation Posters</p>
+        </div>
+        
+    </div>
+</section>
+
+
+<!-- Product Display Section -->
+<main class="product-display">
+    <div id="product-list" class="product-list">
+        <p>Select a category to view products.</p>
+    </div>
+</main>
+
+<!-- Cart Modal -->
+<div id="cart-modal" class="cart-sidebar">
+    <div class="cart-sidebar-content">
+        <span class="close-cart" onclick="closeCart()">&times;</span>
+        <h2>Your Cart</h2>
+        <div id="cart-items-list" class="cart-items-list"></div>
+        <div class="total-price">
+            <p>Total Price: $<span id="total-price">0.00</span></p>
+        </div>
+        <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+      <p class="thank-you-text">Thank you for shopping with us!</p>
+      <p class="copyright-text">© 2025 Kanvaz. All rights reserved.</p>
+    </div>
+  </footer>
+  
+
+<script src="cart.js"></script>
+<script src="products.js"></script>
+</body>
+</html>
