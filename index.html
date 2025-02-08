@@ -75,17 +75,21 @@
 </main>
 
 <!-- Cart Modal -->
+<!-- Cart Modal -->
 <div id="cart-modal" class="cart-sidebar">
     <div class="cart-sidebar-content">
         <span class="close-cart" onclick="closeCart()">&times;</span>
         <h2>Your Cart</h2>
-        <div id="cart-items-list" class="cart-items-list"></div>
+        <div id="cart-items-list" class="cart-items-list"></div> <!-- Cart Items Will Be Added Here -->
+
         <div class="total-price">
             <p>Total Price: $<span id="total-price">0.00</span></p>
         </div>
+
         <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
     </div>
 </div>
+
 
 <footer class="footer">
     <div class="footer-content">
