@@ -20,39 +20,63 @@
 /* General Styles */
 body {
     margin: 0;
-    width: 100%;
-    background: #fdfdfd;
-    color: #333;
+    background:white;
+    font-family: Arial, sans-serif;
 }
 
-/* Colors */
-:root {
-    --primary-color: #91b8dd;   /* Dark teal */
-    --secondary-color: #c2ff91; /* Bright green */
-    --accent-color: #bd1b20;     /* Vibrant red */
-    --highlight-color: #fff1df;  /* Warm orange */
-    --button-color: #ffa352;     /* Golden orange */
-    --footer-bg: #cfffe4;       /* Sea green */
+/* Responsive Design */
+@media screen and (max-width: 430px) { /* iPhone 15 Pro, 16 Pro */
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
 
+@media screen and (max-width: 480px) { /* Small phones */
+    body {
+        font-size: 15px;
+    }
+}
 
+@media screen and (max-width: 540px) { /* Samsung S15, S16 */
+    body {
+        font-size: 16px;
+    }
+}
 
+@media screen and (max-width: 600px) { /* Medium screens */
+    body {
+        font-size: 17px;
+    }
+}
 
+@media screen and (max-width: 720px) { /* Samsung S24, S24 Ultra */
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) { /* Tablets & larger screens */
+    body {
+        font-size: 20px;
+    }
+}
 h1 {
     font-size: 28px;
     color: white;
     text-align: center;
 }
+
 /* Announcement Bar Styling */
 .announcement-bar {
-  width: 111%; /* Ensures the bar takes up the full width */
-  background:black; /* Creative gradient */
-  color: rgb(255, 255, 255);
+  width: 111%; /* Full width */
+  background: black;
+  color: rgb(0, 255, 0); /* Green LED color */
   font-size: 16px;
   font-weight: bold;
   white-space: nowrap;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  
+  overflow: hidden;
+  position: relative;
 }
 
 /* Wrapper for the Scrolling Content */
@@ -60,7 +84,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  position: relative;
   width: 100%;
   overflow: hidden;
 }
@@ -68,32 +91,53 @@ h1 {
 /* Scrolling Content Box */
 .box-sw-announcement-bar {
   display: flex;
-  animation: slide-har 100s linear infinite; /* Smooth and continuous scrolling */
+  animation: slide-har 10s linear infinite; /* Smooth scrolling */
   will-change: transform;
 }
 
-/* Announcement Item Styling */
+/* Announcement Item Styling with LED Effect */
 .announcement-bar-item {
   display: inline-block;
-  padding: 0 50px; /* Space between each announcement */
+  padding: 0 50px;
   text-transform: uppercase;
-  font-size: 18px; /* Larger text for emphasis */
-  letter-spacing: 2px; /* Add spacing for trendy look */
-  transition: transform 0.3s ease; /* Smooth transition effect */
+  font-size: 18px;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease;
+  font-weight: bold;
+  
+  /* Green Neon LED Glow */
+  text-shadow: 0 0 5px rgb(0, 255, 0), 
+               0 0 10px rgb(0, 255, 0), 
+               0 0 20px rgb(0, 255, 0),
+               0 0 40px rgba(0, 255, 0, 0.8);
+               
+  animation: neonGlow 1.5s infinite alternate;
 }
 
 /* Hover Effect for Announcements */
 .announcement-bar-item:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05);
 }
 
 /* Scroll Animation Keyframes */
 @keyframes slide-har {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Neon Glow Flickering Effect */
+@keyframes neonGlow {
   0% {
-      transform: translateX(0%);
+    text-shadow: 0 0 5px rgb(0, 255, 0), 
+                 0 0 10px rgb(0, 255, 0), 
+                 0 0 20px rgb(0, 255, 0),
+                 0 0 30px rgba(0, 255, 0, 0.8);
   }
   100% {
-      transform: translateX(-100%);
+    text-shadow: 0 0 7px rgb(0, 255, 0), 
+                 0 0 14px rgb(0, 255, 0), 
+                 0 0 25px rgb(0, 255, 0),
+                 0 0 50px rgba(0, 255, 0, 0.9);
   }
 }
 
@@ -109,16 +153,17 @@ h1 {
 }
 
 /* Header with Logo */
-/* Header Styling */
+/* Header with Centered Logo */
 .header {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   padding: 20px;
   background: white;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1001;
   position: relative;
+  width: 100%;
 }
 
 /* Centered Logo with Increased Size */
@@ -126,14 +171,15 @@ h1 {
   max-height: 80px; /* Increased size */
   width: auto;
   transition: transform 0.3s ease-in-out;
+  display: block; /* Ensure proper centering */
 }
 
-/* Hover Effect for a More Interactive Feel */
+/* Hover Effect for Interactivity */
 .header img:hover {
   transform: scale(1.1); /* Slight zoom effect */
 }
 
-/* Add a Decorative Line Under the Header */
+/* Decorative Line Under the Header */
 .header::after {
   content: "";
   width: 80%;
@@ -157,7 +203,9 @@ h1 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Mobile and Tablet Responsive */
+/* Responsive Design */
+
+/* Tablets */
 @media (max-width: 768px) {
   .header {
       padding: 15px;
@@ -173,6 +221,7 @@ h1 {
   }
 }
 
+/* Mobile Devices */
 @media (max-width: 480px) {
   .header {
       padding: 10px;
@@ -188,7 +237,8 @@ h1 {
   }
 }
 
-  /* Adjust welcome section padding for smaller screens */
+/* Additional Adjustments for Smaller Screens */
+@media (max-width: 400px) {
   .welcome {
     padding: 10px;
   }
@@ -200,7 +250,7 @@ h1 {
   .welcome p {
     font-size: 14px; /* Adjust font size for smaller text */
   }
-
+}
 
 /* Catalog Section */
 .catalog {
