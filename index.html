@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Kanvaz - Buy high-quality posters, polaroids, and decor prints. Shop now!">
+
     <title>KANVAZ.in</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body class>
+    <script>
+        function checkScreenSize() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            const screenWidth = window.innerWidth;
+    
+            
+            const isMobile = /iphone|ipod|android|blackberry|opera mini|windows phone|iemobile|mobile/i.test(userAgent);
+            
+            
+            const isTablet = /ipad|android(?!.*mobile)/i.test(userAgent) || (screenWidth >= 768 && screenWidth <= 1366);
+    
+          
+            const isFoldable = /galaxy z fold|fold/i.test(userAgent);
+    
+            if (!(isMobile || isTablet || isFoldable)) {
+                document.body.innerHTML = '<div style="text-align:center; margin-top:50px; font-size:20px; color:red;">❌ This website is only accessible on mobile, foldable, or tablet devices. Please open it on your phone or tablet.</div>';
+            }
+        }
+    
+        window.addEventListener("load", checkScreenSize);
+        window.addEventListener("resize", checkScreenSize);
+    </script>
+    
+    </head>
+<body>
 <div class="sticky-container">
     <div class="header">
-
-        <img src="image\final.png" alt="Kanishk Logo" class="logo">
+        <img src="image/final.png" alt="Kanishk Logo" class="logo">
         <div class="cart-icon-container">
             <div class="cart-icon" onclick="viewCart()">
                 <img src="cart-icon.png" alt="Cart" class="cart-icon-img">
@@ -25,7 +52,7 @@
                     <p>OUR PRODUCTS ,</p>
                 </div>
                 <div class="announcement-bar-item">
-                    <p>POLORID,POSTER,</p>
+                    <p>POLAROID, POSTER,</p>
                 </div>
                 <div class="announcement-bar-item">
                     <p>FOLLOW ON INSTAGRAM @kanvaz.in</p>
@@ -35,37 +62,30 @@
         <span class="icon-close close-announcement-bar"></span>
     </div>
 </div>
+
 <!-- Categories Section -->
 <section class="categories">
     <div class="categories-wrapper">
         <div class="category-item" onclick="showCategory('polaroid')">
-            <img src="images/brooches-icon.jpg" alt="Polaroid Photo">
-            <p>Polaroid Photos</p>
+            <img src="image/Product/CAT-image/p1.webp" alt="Polaroid Photo">
         </div>
-        <div class="category-item" onclick="showCategory('Car')">
-            <img src="image/Product/CAT-image/CAR 1.png" alt="Polaroid Photo">
-            <p>Car Posters</p>
+        <div class="category-item" onclick="showCategory('car')">
+            <img src="image/Product/CAT-image/CAR 1 (2).webp" alt="Car Posters">
         </div>
         <div class="category-item" onclick="showCategory('anime')">
-            <img src="image/Product/CAT-image/ANIME 1.png" alt="Anime Posters">
-            <p>Anime Posters</p>
+            <img src="image/Product/CAT-image/ANIME 1.webp" alt="Anime Posters">
         </div>
         <div class="category-item" onclick="showCategory('music')">
-            <img src="image/Product/CAT-image/MUSIC1.png" alt="Music Posters">
-            <p>Music Posters</p>
+            <img src="image/Product/CAT-image/MUSIC1.webp" alt="Music Posters">
         </div>
         <div class="category-item" onclick="showCategory('movie')">
-            <img src="image/Product/CAT-image/MOVIE 1.png" alt="Movie Posters">
-            <p>Movie Posters</p>
+            <img src="image/Product/CAT-image/MOVIE 1.webp" alt="Movie Posters">
         </div>
-        <div class="category-item" onclick="showCategory('sports')">
-            <img src="image/Product/CAT-image/MOTIVATION 1.png" alt="Sports Posters">
-            <p>Motivation Posters</p>
+        <div class="category-item" onclick="showCategory('Motivation')">
+            <img src="image/Product/CAT-image/MOTIVATION 1.webp" alt="Sports Posters">
         </div>
-        
     </div>
 </section>
-
 
 <!-- Product Display Section -->
 <main class="product-display">
@@ -74,30 +94,30 @@
     </div>
 </main>
 
-<!-- Cart Modal -->
-<!-- Cart Modal -->
+<!-- Cart Sidebar Modal -->
 <div id="cart-modal" class="cart-sidebar">
     <div class="cart-sidebar-content">
         <span class="close-cart" onclick="closeCart()">&times;</span>
         <h2>Your Cart</h2>
-        <div id="cart-items-list" class="cart-items-list"></div> <!-- Cart Items Will Be Added Here -->
-
-        <div class="total-price">
-            <p>Total Price: $<span id="total-price">0.00</span></p>
+        <div id="cart-items-list" class="cart-items-list">
+            <!-- Cart items will be dynamically added here -->
         </div>
-
-        <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+        <!-- Cart Footer -->
+        <div class="cart-footer">
+            <div class="total-price">
+                <p>Total: <strong>$<span id="total-price">0.00</span></strong></p>
+            </div>
+            <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+        </div>
     </div>
 </div>
 
-
 <footer class="footer">
     <div class="footer-content">
-      <p class="thank-you-text">Thank you for shopping with us!</p>
-      <p class="copyright-text">© 2025 Kanvaz. All rights reserved.</p>
+        <p class="thank-you-text">Thank you for shopping with us!</p>
+        <p class="copyright-text">© 2025 Kanvaz. All rights reserved.</p>
     </div>
-  </footer>
-  
+</footer>
 
 <script src="cart.js"></script>
 <script src="products.js"></script>

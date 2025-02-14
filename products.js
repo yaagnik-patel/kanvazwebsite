@@ -1,212 +1,391 @@
 const products = {
-    ar: [
+    polaroid: [
         { 
-            name: 'Naruto Poster', 
-            imageUrl: 'images/anime/naruto.jpg', 
-            sizes: {'A4': 15.0, 'A5': 12.0, 'A4 LANDSCAPE': 16.0, 'A5 LANDSCAPE': 13.0 } 
+            name: 'custome Thumbprint Polaroid 1', 
+            imageUrl: 'image/Product/Polorid/polorid  (12).webp', 
+            price: 20, 
+            minOrder:9 
+        },
+        { 
+            name: 'custome Thumbprint Polaroid 2', 
+            imageUrl: 'image/Product/Polorid/polorid  (13).webp', 
+            price: 20, // Fixed price per piece
+            minOrder:9 // Minimum order quantity
+        },
+        { 
+            name: 'Spotify Code<br>Polaroid', 
+            imageUrl: 'image/Product/Polorid/polorid  (7).webp', 
+            price: 20, // Fixed price per piece
+            minOrder:9 // Minimum order quantity
         },
         
-    ],
-    anime: [
         { 
-            name: 'Pink Floyd Poster', 
-            imageUrl: 'images/music/pinkfloyd.jpg', 
-            sizes: {
-                'A4': 20.0, 'A5': 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0 
-            } 
+            name: 'White<br>Polaroid', 
+            imageUrl: 'image/Product/Polorid/polorid  (1).webp', 
+            price:16.667, // Fixed price per piece
+            minOrder:9 // Minimum order quantity
         },
         { 
-            name: 'Taylor Swift Poster', 
-            imageUrl: 'image/Product/Poater/music/Taylor-1.jpg', 
-            sizes: {
-                'A4': 18.0, 'A5': 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0 
-            } 
+            name: 'Coloring Polaroid', 
+            imageUrl: 'image/Product/Polorid/polorid  (4).webp', 
+            price: 20, // Fixed price per piece
+            minOrder:9 // Minimum order quantity
+        },
+        { 
+            name: 'Pattren Polaroid', 
+            imageUrl: 'image/Product/Polorid/polorid  (5).webp', 
+            price: 20, // Fixed price per piece
+            minOrder:9 // Minimum order quantity
+        },
+        { 
+            name: 'Grey<br> Polaroid', 
+            imageUrl: 'image/Product/Polorid/polorid  (6).webp', 
+            price: 20, // Fixed price per piece
+            minOrder:9 // Minimum order quantity
+        },
+
+        { 
+            name: 'Unique color Polaroid', 
+            imageUrl: 'image/Product/Polorid/polorid  (9).webp', 
+            price: 20, // Fixed price per piece
+            minOrder:9 // Minimum order quantity
+        }
+
+    ],
+    anime: [
+        {
+            name: 'Goku SSJ1 vs Beerus',
+            imageUrl: 'image/Product/Poater/Anime/anime (1).webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Dragon Ball Super Art',
+            imageUrl: 'image/Product/Poater/Anime/anime (2).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },{
+            name: 'One Piece Samurai Zoro',
+            imageUrl: 'image/Product/Poater/Anime/anime (3).webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Taylor Swift 2',
+            imageUrl: 'image/Product/Poater/Anime/anime (4).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 3',
+            imageUrl: 'image/Product/Poater/Anime/anime (5).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 4',
+            imageUrl: 'image/Product/Poater/Anime/anime (6).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (7).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (8).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (9).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (10).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (11).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (12).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (13).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (14).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (15).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (16).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (17).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (18).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (19).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (20).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (21).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Taylor Swift 5',
+            imageUrl: 'image/Product/Poater/Anime/anime (22).webp',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
         }
     ],
     music: [
-        { 
-            name: 'Taylor Swift 1', 
-            imageUrl: 'image/Product/Poater/music/music (1).jpg', 
-            sizes: {
-                'A4': 20.0, 'A5': 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0 
-            } 
+        {
+            name: 'Taylor Swift 6',
+            imageUrl: 'image/Product/Poater/music/music (17).jpg',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
         }
-        ,{ 
-            name: 'Taylor Swift 2', 
-            imageUrl: 'image/Product/Poater/music/music (13).jpg', 
-            sizes: {
-                'A4': 18.0, 'A5': 15.0, 'A4 LANDSCAPE': 19.0,'A5 LANDSCAPE': 16.0 
-            } 
-        }
-        ,{ 
-            name: 'Taylor Swift 3', 
-            imageUrl: 'image/Product/Poater/music/music (14).jpg', 
-            sizes: {'A4': 18.0, 'A5': 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0 } 
-        }
-        ,{ 
-            name: 'Taylor Swift 4', 
-            imageUrl: 'image/Product/Poater/music/music (15).jpg', 
-            sizes: {'A4': 18.0, 'A5': 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0 } 
-        }
-        ,{ 
-            name: 'Taylor Swift 5', 
-            imageUrl: 'image/Product/Poater/music/music (16).jpg', 
-            sizes: {'A4': 18.0, 'A5': 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0 } 
-        }
-        ,{ 
-            name: 'Taylor Swift 6', 
-            imageUrl: 'image/Product/Poater/music/music (17).jpg', 
-            sizes: {'A4': 18.0, 'A5': 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0 } 
-        }
-        ,{ 
-            name: 'Taylor Swift 7', 
-            imageUrl: 'image/Product/Poater/music/music (18).jpg', 
-            sizes: {'A4': 18.0, 'A5': 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0 } 
-        }
-        ,{ 
-            name: 'Taylor Swift 8', 
-            imageUrl: 'image/Product/Poater/music/music (19).jpg', 
-            sizes: {'A4': 18.0, 'A5': 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0 } 
-        }
-        ,{ 
-            name: 'PINK FLOYD 1 ', 
-            imageUrl: 'image/Product/Poater/music/music (20).jpg', 
-            sizes: {'A4': 18.0, 'A5': 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0 } 
-        }
-        ,{ 
-            name: 'PINK FLOYD 1', 
-            imageUrl: 'image/Product/Poater/music/music (21).jpg', 
-            sizes: {'A4': 18.0, 'A5': 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0 } 
-        }
-        ,{ 
-            name: 'Taylor SwifT 9', 
-            imageUrl: 'image/Product/Poater/music/music (22).jpg', 
-            sizes: {'A4': 18.0, 'A5': 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0 } 
-        }
-        ,{ 
-            name: 'Barbie Poster', 
-            imageUrl: 'image/Product/Poater/music/music (23).jpg', 
-            sizes: {'A4': 18.0, 'A5': 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0 } 
-        }
-        ,{ 
-            name: 'Taylor Swift 10', 
-            imageUrl: 'image/Product/Poater/music/music (24).jpg', 
-            sizes: {'A4': 18.0, 'A5': 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0 } 
-        }
-    ],movie : [
-        { 
-            name: 'Pink Floyd Poster', 
-            imageUrl: 'images/music/pinkfloyd.jpg', 
-            sizes: {
-                'A4': 20.0, 
-                'A5': 17.0, 
-                'A4 LANDSCAPE': 22.0, 
-                'A5 LANDSCAPE': 18.0 
-            } 
+    ],
+    movie: [
+        {
+            name: 'Pink Floyd Poster',
+            imageUrl: 'images/music/pinkfloyd.jpg',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
         },
-        { 
-            name: 'Taylor Swift Poster', 
-            imageUrl: 'image/Product/Poater/music/Taylor-1.jpg', 
-            sizes: {
-                'A4': 18.0, 
-                'A5': 15.0, 
-                'A4 LANDSCAPE': 19.0, 
-                'A5 LANDSCAPE': 16.0 
-            } 
+        {
+            name: 'Taylor Swift Poster',
+            imageUrl: 'image/Product/Poater/music/Taylor-1.jpg',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
         }
     ],
-    sports: [
-        { 
-            name: 'Coders Poster', 
-            imageUrl: 'image/Product/Poater/Motivatinal/moti (1).jpg', 
-            sizes: {
-                'A4': 20.0, 
-                'A5': 17.0, 
-                'A4 LANDSCAPE': 22.0, 
-                'A5 LANDSCAPE': 18.0 
-            } 
-        }
-        ,{ 
-            name: 'Push Your self', 
-            imageUrl: 'image/Product/Poater/Motivatinal/moti (11).jpg', 
-            sizes: {
-                'A4': 18.0, 
-                'A5': 15.0, 
-                'A4 LANDSCAPE': 19.0, 
-                'A5 LANDSCAPE': 16.0 
-            } 
-        }
-        ,{ 
-            name: 'chees lover', 
-            imageUrl: 'image/Product/Poater/Motivatinal/moti (12).jpg', 
-            sizes: {
-                'A4': 18.0, 
-                'A5': 15.0, 
-                'A4 LANDSCAPE': 19.0, 
-                'A5 LANDSCAPE': 16.0 
-            } 
-        }
-        ,{ 
-            name: 'DREAM + WORK =SUCCESS', 
-            imageUrl: 'image/Product/Poater/Motivatinal/moti (13).jpg', 
-            sizes: {
-                'A4': 18.0, 
-                'A5': 15.0, 
-                'A4 LANDSCAPE': 19.0, 
-                'A5 LANDSCAPE': 16.0 
-            } 
-        }
-        ,{ 
-            name: 'DINOSOUR', 
-            imageUrl: 'image/Product/Poater/Motivatinal/moti (14).jpg', 
-            sizes: {
-                'A4': 18.0, 
-                'A5': 15.0, 
-                'A4 LANDSCAPE': 19.0, 
-                'A5 LANDSCAPE': 16.0 
-            } 
-        }
-        ,{ 
-            name: 'HELLO WORLD', 
-            imageUrl: 'image/Product/Poater/Motivatinal/moti (15).jpg', 
-            sizes: {
-                'A4': 18.0, 
-                'A5': 15.0, 
-                'A4 LANDSCAPE': 19.0, 
-                'A5 LANDSCAPE': 16.0 
-            } 
-        }
-        ,{ 
-            name: 'CODE WITH CODFFE', 
-            imageUrl: 'image/Product/Poater/Motivatinal/moti (16).jpg', 
-            sizes: {
-                'A4': 18.0, 
-                'A5': 15.0, 
-                'A4 LANDSCAPE': 19.0, 
-                'A5 LANDSCAPE': 16.0 
-            } 
-        }
-        ,{ 
-            name: 'DEAD LIFT GYM', 
-            imageUrl: 'image/Product/Poater/Motivatinal/moti (17).jpg', 
-            sizes: {
-                'A4': 18.0, 
-                'A5': 15.0, 
-                'A4 LANDSCAPE': 19.0, 
-                'A5 LANDSCAPE': 16.0 
-            } 
-        }
-        ,{ 
-            name: 'FIGTH GYM', 
-            imageUrl: 'image/Product/Poater/Motivatinal/moti (22).jpg', 
-            sizes: {
-                'A4': 18.0, 
-                'A5': 15.0, 
-                'A4 LANDSCAPE': 19.0, 
-                'A5 LANDSCAPE': 16.0 
-            } 
+    Motivation: [
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/Motivatinal/moti (1).jpg',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Push Yourself',
+            imageUrl: 'image/Product/Poater/Motivatinal/moti (11).jpg',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'Chess Lover',
+            imageUrl: 'image/Product/Poater/Motivatinal/moti (12).jpg',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
+        },
+        {
+            name: 'DREAM + WORK = SUCCESS',
+            imageUrl: 'image/Product/Poater/Motivatinal/moti (13).jpg',
+            size: {
+                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+            }
         }
     ],
+
+    car: [
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/1.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/2.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/3.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/4.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/5.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/6.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/7.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/8.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/9.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/10.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/11.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/12.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/13.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/14.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/15.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/16.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        {
+            name: 'Coders Poster',
+            imageUrl: 'image/Product/Poater/car/17.webp',
+            size: {
+                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+            }
+        },
+        
+    ]
+
 };
 
 let selectedSize = {}; // Object to track selected sizes per product
@@ -217,27 +396,43 @@ function showCategory(category) {
 
     if (products[category]) {
         products[category].forEach(product => {
-            const defaultSize = Object.keys(product.sizes)[0]; // Get the first size as default
-            selectedSize[product.name] = defaultSize; // Set default selected size
-            
-            const productElem = document.createElement('div');
-            productElem.className = 'card';
-            productElem.innerHTML = `
-                <div class="card-img">
-                    <img src="${product.imageUrl}" alt="${product.name}" class="product-image">
-                </div>
-                <h3 class="card-title">${product.name}</h3>
-                <p class="card-price" id="price-${product.name}">$${product.sizes[defaultSize].toFixed(2)}</p>
-                <div class="size-selection">
-                    ${Object.keys(product.sizes).map(size => `
-                        <button class="card-btn" onclick="selectSize('${product.name}', '${size}', ${product.sizes[size]}, this)">
-                            ${size}
-                        </button>
-                    `).join('')}
-                </div>
-                <button onclick="addToCart('${product.name}', '${defaultSize}', ${product.sizes[defaultSize]}, '${product.imageUrl}')" class="card-btn add-to-cart">Add to Cart</button>
-            `;
-            productList.appendChild(productElem);
+            if (category === 'polaroid') {
+                // Polaroid Product Card (Fixed Price & Fixed Min Order)
+                const productElem = document.createElement('div');
+                productElem.className = 'card';
+                productElem.innerHTML = `
+                    <div class="card-img">
+                        <img src="${product.imageUrl}" alt="${product.name}" class="product-image">
+                    </div>
+                    <h3 class="card-title">${product.name}</h3>
+                    <p class="card-price" id="price-${product.name}">₹${(product.price * product.minOrder).toFixed(2)} (MAX 9 pieces per order)</p>
+                    <button onclick="addPolaroidToCart('${product.name}', '${product.imageUrl}', ${product.price})" class="card-btn add-to-cart">Add to Cart</button>
+                `;
+                productList.appendChild(productElem);
+            } else {
+                // Regular Product Card
+                const defaultSize = Object.keys(product.size)[0]; // Get the first size as default
+                selectedSize[product.name] = defaultSize; // Set default selected size
+
+                const productElem = document.createElement('div');
+                productElem.className = 'card';
+                productElem.innerHTML = `
+                    <div class="card-img">
+                        <img src="${product.imageUrl}" alt="${product.name}" class="product-image">
+                    </div>
+                    <h3 class="card-title">${product.name}</h3>
+                    <p class="card-price" id="price-${product.name}">$${product.size[defaultSize].toFixed(2)}</p>
+                    <div class="size-selection">
+                        ${Object.keys(product.size).map(size => `
+                            <button class="card-btn" onclick="selectSize('${product.name}', '${size}', ${product.size[size]}, this)">
+                                ${size}
+                            </button>
+                        `).join('')}
+                    </div>
+                    <button onclick="addToCart('${product.name}', '${product.imageUrl}')" class="card-btn add-to-cart">Add to Cart</button>
+                `;
+                productList.appendChild(productElem);
+            }
         });
     } else {
         productList.innerHTML = '<p>No products available for this category.</p>';
@@ -259,12 +454,53 @@ function selectSize(productName, size, price, button) {
     document.getElementById(`price-${productName}`).textContent = `$${price.toFixed(2)}`;
 }
 
-// Function to handle adding items to the cart
-function addToCart(productName, size, price, imageUrl) {
+// Function to add Polaroid to Cart with fixed quantity of 9
+function addPolaroidToCart(productName, imageUrl, unitPrice) {
+    const quantity = 9; // Fixed quantity per order
+    const totalPrice = unitPrice * quantity;
+
+    const cartItem = {
+        name: productName,
+        size: `9 pieces`,
+        price: totalPrice,
+        imageUrl: imageUrl,
+        quantity: 1
+    };
+
+    // Check if the item is already in the cart
+    const existingItemIndex = cartItems.findIndex(item => item.name === productName);
+    
+    if (existingItemIndex !== -1) {
+        cartItems[existingItemIndex].quantity += quantity; // Increase quantity if exists
+        cartItems[existingItemIndex].price += totalPrice;
+    } else {
+        cartItems.push(cartItem); // Add new item if not exists
+    }
+
+    updateCartDisplay();
+    updateCartCount();
+}
+function addToCart(productName, imageUrl) {
     if (!selectedSize[productName]) {
         alert('Please select a size before adding to the cart.');
         return;
     }
+
+    const size = selectedSize[productName]; // Get the selected size
+    
+    // Find the product in any category
+    let foundProduct = null;
+    for (const category in products) {
+        foundProduct = products[category].find(product => product.name === productName);
+        if (foundProduct) break; // Stop searching once found
+    }
+
+    if (!foundProduct) {
+        console.error(`Product "${productName}" not found in any category.`);
+        return;
+    }
+
+    const price = foundProduct.size[size]; // Get price of selected size
 
     const cartItem = {
         name: productName,
@@ -280,52 +516,33 @@ function addToCart(productName, size, price, imageUrl) {
     );
 
     if (existingItemIndex !== -1) {
-        // Item exists, increment the quantity
-        cartItems[existingItemIndex].quantity += 1;
+        cartItems[existingItemIndex].quantity += 1; // Increase quantity if exists
     } else {
-        // Item doesn't exist, add it to the cart
-        cartItems.push(cartItem);
+        cartItems.push(cartItem); // Add new item if not exists
     }
 
-    updateCartDisplay(); // Refresh the cart display
-    updateCartCount(); // Update the cart count
+    updateCartDisplay();
+    updateCartCount();
+
 
     // Reset size button color after adding to cart
     resetSizeButtonColor();
 }
 
-// Function to reset the size button color back to normal
-function resetSizeButtonColor() {
-    const activeButtons = document.querySelectorAll('.card-btn.active');
-    activeButtons.forEach(button => button.classList.remove('active'));
-}
-
-// Function to update the cart display
-function updateCartDisplay() {
-    const cartItemsList = document.getElementById('cart-items-list');
-    const totalPriceElem = document.getElementById('total-price');
-    cartItemsList.innerHTML = ''; // Clear existing items
-
-    let totalPrice = 0;
-
-    cartItems.forEach((item, index) => {
-        const itemElem = document.createElement('div');
-        itemElem.className = 'cart-item';
-        itemElem.innerHTML = `
-            <img src="${item.imageUrl}" alt="${item.name}" class="cart-item-img">
-            <div class="cart-item-details">
-                <p class="product-name">${item.name} - Size: ${item.size}</p>
-                <p class="product-price">$${item.price.toFixed(2)} x ${item.quantity}</p>
-                <button class="remove-item-btn" onclick="removeFromCart(${index})">Remove</button>
-            </div>
-        `;
-        cartItemsList.appendChild(itemElem);
-        totalPrice += item.price * item.quantity;
-    });
-
-    totalPriceElem.textContent = totalPrice.toFixed(2); // Update total price
-}
-
 window.onload = function() {
-    showCategory('anime'); // Default category
+    showCategory('polaroid'); // Default category
 };
+
+function preloadImages() {
+    for (const category in products) {
+        products[category].forEach(product => {
+            const link = document.createElement('link');
+            link.rel = 'preload';
+            link.href = product.imageUrl;
+            link.as = 'image';
+            document.head.appendChild(link);
+        });
+    }
+}
+
+

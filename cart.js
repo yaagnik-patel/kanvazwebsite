@@ -10,15 +10,17 @@ function viewCart() {
 function closeCart() {
     document.getElementById('cart-modal').classList.remove('open');
 }
+function addItemToCart(productName, price, imageUrl, size) {
+    price = parseFloat(price); // Ensure price is always a number
 
-// Add product to cart
-function addToCart(productName, price, imageUrl, size) {
+    // Find item with SAME name AND size
     const existingItem = cartItems.find(item => item.name === productName && item.size === size);
 
     if (existingItem) {
-        existingItem.quantity += 1;
+        existingItem.quantity += 1; // Increase quantity if same name + size exists
     } else {
-        cartItems.push({ name: productName, price: price, quantity: 1, imageUrl: imageUrl, size: size });
+        // Treat different sizes as separate items
+        cartItems.push({ name: productName, price, quantity: 1, imageUrl, size });
     }
 
     updateCartDisplay();
@@ -37,17 +39,20 @@ function updateCartDisplay() {
         const itemElem = document.createElement('div');
         itemElem.className = 'cart-item';
         itemElem.innerHTML = `
-            <img src="${item.imageUrl}" alt="${item.name}" class="cart-item-img">
-            <div class="cart-item-details">
-                <p class="product-name">${item.name} - Size: ${item.size}</p>
-                <p class="product-price">$${item.price.toFixed(2)}</p>
-                <div class="quantity-controls">
-                    <button class="qty-btn decrease" onclick="changeQuantity(${index}, -1)">-</button>
-                    <span class="item-quantity" id="item-quantity-${index}">${item.quantity}</span>
-                    <button class="qty-btn increase" onclick="changeQuantity(${index}, 1)">+</button>
-                </div>
-                <button class="remove-item-btn" onclick="removeFromCart(${index})">Remove</button>
-            </div>
+        <div class="cart-item">
+    <span class="remove-item" onclick="removeFromCart(${index})">X</span>
+    <img src="${item.imageUrl}" alt="${item.name}" class="cart-item-img">
+    <div class="cart-item-details">
+        <p class="product-name">${item.name} - <strong>Size: ${item.size}</strong></p>
+        <p class="product-price">$${item.price.toFixed(2)}</p>
+        <div class="quantity-controls">
+            <button class="qty-btn decrease" onclick="changeQuantity(${index}, -1)">-</button>
+            <span class="item-quantity" id="item-quantity-${index}">${item.quantity}</span>
+            <button class="qty-btn increase" onclick="changeQuantity(${index}, 1)">+</button>
+        </div>
+    </div>
+</div>
+
         `;
         cartItemsList.appendChild(itemElem);
         totalPrice += item.price * item.quantity;
@@ -63,7 +68,6 @@ function changeQuantity(index, change) {
     } else {
         removeFromCart(index);
     }
-    document.getElementById(`item-quantity-${index}`).textContent = cartItems[index]?.quantity || 0;
     updateCartDisplay();
     updateCartCount();
 }
@@ -83,6 +87,7 @@ function updateCartCount() {
     }
 }
 
+
 // Proceed to checkout (WhatsApp Order)
 function proceedToCheckout() {
     if (cartItems.length === 0) {
@@ -101,3 +106,7 @@ function proceedToCheckout() {
     const whatsappURL = `https://wa.me/+917046145944?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
 }
+function closeCart() {
+    document.getElementById('cart-modal').classList.remove('open');
+}
+
