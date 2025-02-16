@@ -57,153 +57,153 @@ const products = {
             name: 'Goku SSJ1 vs Beerus',
             imageUrl: 'image/Product/Poater/Anime/anime (1).webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Dragon Ball Super Art',
             imageUrl: 'image/Product/Poater/Anime/anime (2).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },{
             name: 'One Piece Samurai Zoro',
             imageUrl: 'image/Product/Poater/Anime/anime (3).webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 2',
+            name: 'Son Goku',
             imageUrl: 'image/Product/Poater/Anime/anime (4).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 3',
+            name: 'Son Goku & Vegeta',
             imageUrl: 'image/Product/Poater/Anime/anime (5).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 4',
+            name: 'Gogeta & Broly',
             imageUrl: 'image/Product/Poater/Anime/anime (6).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Son goku fight',
             imageUrl: 'image/Product/Poater/Anime/anime (7).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Gogesta',
             imageUrl: 'image/Product/Poater/Anime/anime (8).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Taylor Swift 5',
             imageUrl: 'image/Product/Poater/Anime/anime (9).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Taylor Swift 5',
             imageUrl: 'image/Product/Poater/Anime/anime (10).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Taylor Swift 5',
             imageUrl: 'image/Product/Poater/Anime/anime (11).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Taylor Swift 5',
             imageUrl: 'image/Product/Poater/Anime/anime (12).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Taylor Swift 5',
             imageUrl: 'image/Product/Poater/Anime/anime (13).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Taylor Swift 5',
             imageUrl: 'image/Product/Poater/Anime/anime (14).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Taylor Swift 5',
             imageUrl: 'image/Product/Poater/Anime/anime (15).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Taylor Swift 5',
             imageUrl: 'image/Product/Poater/Anime/anime (16).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Taylor Swift 5',
             imageUrl: 'image/Product/Poater/Anime/anime (17).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Taylor Swift 5',
             imageUrl: 'image/Product/Poater/Anime/anime (18).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Taylor Swift 5',
             imageUrl: 'image/Product/Poater/Anime/anime (19).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Taylor Swift 5',
             imageUrl: 'image/Product/Poater/Anime/anime (20).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Taylor Swift 5',
             imageUrl: 'image/Product/Poater/Anime/anime (21).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Taylor Swift 5',
             imageUrl: 'image/Product/Poater/Anime/anime (22).webp',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         }
     ],
@@ -212,7 +212,7 @@ const products = {
             name: 'Taylor Swift 6',
             imageUrl: 'image/Product/Poater/music/music (17).jpg',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         }
     ],
@@ -221,14 +221,14 @@ const products = {
             name: 'Pink Floyd Poster',
             imageUrl: 'images/music/pinkfloyd.jpg',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Taylor Swift Poster',
             imageUrl: 'image/Product/Poater/music/Taylor-1.jpg',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         }
     ],
@@ -237,28 +237,28 @@ const products = {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/Motivatinal/moti (1).jpg',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Push Yourself',
             imageUrl: 'image/Product/Poater/Motivatinal/moti (11).jpg',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Chess Lover',
             imageUrl: 'image/Product/Poater/Motivatinal/moti (12).jpg',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'DREAM + WORK = SUCCESS',
             imageUrl: 'image/Product/Poater/Motivatinal/moti (13).jpg',
             size: {
-                A4: 18.0, A5: 15.0, 'A4 LANDSCAPE': 19.0, 'A5 LANDSCAPE': 16.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         }
     ],
@@ -268,119 +268,119 @@ const products = {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/1.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/2.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/3.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/4.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/5.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/6.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/7.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/8.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/9.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/10.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/11.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/12.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/13.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/14.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/15.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/16.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
             name: 'Coders Poster',
             imageUrl: 'image/Product/Poater/car/17.webp',
             size: {
-                A4: 20.0, A5: 17.0, 'A4 LANDSCAPE': 22.0, 'A5 LANDSCAPE': 18.0
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         
@@ -405,7 +405,7 @@ function showCategory(category) {
                         <img src="${product.imageUrl}" alt="${product.name}" class="product-image">
                     </div>
                     <h3 class="card-title">${product.name}</h3>
-                    <p class="card-price" id="price-${product.name}">₹${(product.price * product.minOrder).toFixed(2)} (MAX 9 pieces per order)</p>
+                    <p class="card-price" id="price-${product.name}">₹${(product.price * product.minOrder).toFixed(2)} (9 pieces per order)</p>
                     <button onclick="addPolaroidToCart('${product.name}', '${product.imageUrl}', ${product.price})" class="card-btn add-to-cart">Add to Cart</button>
                 `;
                 productList.appendChild(productElem);
