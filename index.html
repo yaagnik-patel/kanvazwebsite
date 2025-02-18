@@ -10,18 +10,14 @@
 
     <title>KANVAZ.in</title>
     <link rel="stylesheet" href="styles.css">
+    
     <script>
         function checkScreenSize() {
             const userAgent = navigator.userAgent.toLowerCase();
             const screenWidth = window.innerWidth;
     
-            
             const isMobile = /iphone|ipod|android|blackberry|opera mini|windows phone|iemobile|mobile/i.test(userAgent);
-            
-            
             const isTablet = /ipad|android(?!.*mobile)/i.test(userAgent) || (screenWidth >= 768 && screenWidth <= 1366);
-    
-          
             const isFoldable = /galaxy z fold|fold/i.test(userAgent);
     
             if (!(isMobile || isTablet || isFoldable)) {
@@ -32,9 +28,9 @@
         window.addEventListener("load", checkScreenSize);
         window.addEventListener("resize", checkScreenSize);
     </script>
-    
-    </head>
+</head>
 <body>
+
 <div class="sticky-container">
     <div class="header">
         <img src="image/final.webp" alt="Kanishk Logo" class="logo">
@@ -45,6 +41,7 @@
             </div>
         </div>
     </div>
+
     <div class="announcement-bar bg_violet">
         <div class="wrap-announcement-bar">
             <div class="box-sw-announcement-bar speed-1">
@@ -87,6 +84,14 @@
     </div>
 </section>
 
+<!-- Slideshow Section -->
+<section class="slideshow-container">
+    <div class="slideshow">
+        <img src="image/1.jpg" class="slideshow-image active">
+        <img src="image/2.jpg" class="slideshow-image">
+    </div>
+</section>
+
 <!-- Product Display Section -->
 <main class="product-display">
     <div id="product-list" class="product-list">
@@ -102,7 +107,6 @@
         <div id="cart-items-list" class="cart-items-list">
             <!-- Cart items will be dynamically added here -->
         </div>
-        <!-- Cart Footer -->
         <div class="cart-footer">
             <div class="total-price">
                 <p>Total: <strong>$<span id="total-price">0.00</span></strong></p>
@@ -119,7 +123,59 @@
     </div>
 </footer>
 
+<style>
+/* Slideshow Styles */
+.slideshow-container {
+    border:1px solid #000;
+    border-radius:6px;
+    box-shadow:5px 4px #000;
+    margin-top: -5%;
+    align-content: center;
+    margin-bottom: 3%;
+    width: 99%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically if needed */
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+}
+
+.slideshow-image {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.slideshow-image.active {
+    display: block;
+}
+</style>
+
+<script>
+// Slideshow Script
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slideshow-image');
+
+function showSlides() {
+    slides.forEach((slide, index) => {
+        slide.classList.remove('active');
+    });
+    slides[slideIndex].classList.add('active');
+    slideIndex = (slideIndex + 1) % slides.length;
+}
+
+// Auto change slides every 3 seconds
+setInterval(showSlides, 3000);
+</script>
+
 <script src="cart.js"></script>
 <script src="products.js"></script>
+
 </body>
 </html>
