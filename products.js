@@ -109,98 +109,98 @@ const products = {
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Gogeta Blue ',
             imageUrl: 'image/Product/Poater/Anime/anime (9).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Gogeta vs Broly Poster – Dragon Ball Super',
             imageUrl: 'image/Product/Poater/Anime/anime (10).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Dragon Ball Poster – Epic Gogeta vs Broly',
             imageUrl: 'image/Product/Poater/Anime/anime (11).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Demon Slayer Mugen Train Poster – Anime Art',
             imageUrl: 'image/Product/Poater/Anime/anime (12).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Rengoku vs Akaza Poster – Demon Slayer Movie',
             imageUrl: 'image/Product/Poater/Anime/anime (13).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Tanjiro Water Breathing Poster – Demon Slayer Art',
             imageUrl: 'image/Product/Poater/Anime/anime (14).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Sukuna Anime Poster – Jujutsu Kaisen Art',
             imageUrl: 'image/Product/Poater/Anime/anime (15).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Tanjiro Kamado Poster – Demon Slayer Wall Art',
             imageUrl: 'image/Product/Poater/Anime/anime (16).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Gohan Super Saiyan Poster – Dragon Ball Z Wall Art',
             imageUrl: 'image/Product/Poater/Anime/anime (17).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Naruto Power Pose Poster – Leaf Village Hero Art',
             imageUrl: 'image/Product/Poater/Anime/anime (18).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Demon Slayer Poster – Tanjiro & Team Epic Anime Wall Art',
             imageUrl: 'image/Product/Poater/Anime/anime (19).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Ultimate Naruto Eyes Poster – Uchiha, Sasuke, Kakashi, Itachi Wall Art',
             imageUrl: 'image/Product/Poater/Anime/anime (20).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Vegetto Super Saiyan Poster – Dragon Ball Fanart Wall Art',
             imageUrl: 'image/Product/Poater/Anime/anime (21).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift 5',
+            name: 'Naruto Sharingan Rinnegan Poster – Uchiha Clan Eye Powers Fanart',
             imageUrl: 'image/Product/Poater/Anime/anime (22).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
@@ -209,8 +209,92 @@ const products = {
     ],
     music: [
         {
-            name: 'Taylor Swift 6',
+            name: 'Taylor Swift x The Eras Tour Poster',
+            imageUrl: 'image/Product/Poater/music/music (1).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'Taylor Swift Reputation Era – Tracklist & Lyrics',
+            imageUrl: 'image/Product/Poater/music/music (13).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'Taylor Swift Portrait Poster – Dreamy Pink & Blue Decor',
+            imageUrl: 'image/Product/Poater/music/music (14).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'Taylor Swift "The Eras Tour" Poster',
+            imageUrl: 'image/Product/Poater/music/music (15).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'TAYLOR SWIFT - LOVER ERA',
+            imageUrl: 'image/Product/Poater/music/music (16).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'lavender haze - Taylor Swift',
             imageUrl: 'image/Product/Poater/music/music (17).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'Cruel Summer Poster | Taylor Swift Retro Aesthetic Wall Art',
+            imageUrl: 'image/Product/Poater/music/music (18).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'Guilty as Sin Poster | Taylor Swift Black & White Lyric Print',
+            imageUrl: 'image/Product/Poater/music/music (19).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'The Dark Side of the Moon Wall Art Poster',
+            imageUrl: 'image/Product/Poater/music/music (20).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'Dark Side Towel',
+            imageUrl: 'image/Product/Poater/music/music (21).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'Taylor Swift Speak Now Poster',
+            imageUrl: 'image/Product/Poater/music/music (22).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'Barbie Aesthetic Wall Art',
+            imageUrl: 'image/Product/Poater/music/music (23).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'Eras Tour Music Poster Custom Made Kanvaz Exclusive',
+            imageUrl: 'image/Product/Poater/music/music (24).jpg',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
@@ -234,14 +318,14 @@ const products = {
     ],
     Motivation: [
         {
-            name: 'Coders Poster',
+            name: 'Code in Progress',
             imageUrl: 'image/Product/Poater/Motivatinal/moti (1).jpg',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Push Yourself',
+            name: 'Motivation for Programmers',
             imageUrl: 'image/Product/Poater/Motivatinal/moti (11).jpg',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
