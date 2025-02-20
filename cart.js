@@ -127,3 +127,5 @@ function proceedToCheckout() {
     const whatsappURL = `https://wa.me/+917046145944?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
 }
+
+

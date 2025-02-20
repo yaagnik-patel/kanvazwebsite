@@ -97,7 +97,7 @@
 <div id="cart-modal" class="cart-sidebar">
     <div class="cart-sidebar-content">
         <span class="close-cart" onclick="closeCart()">&times;</span>
-        <h2>Your Cart</h2>
+        <h2 class="cart-font">Your Cart</h2>
 
         <!-- New Image inside Cart -->
         <div class="cart-image">
@@ -135,10 +135,7 @@
 <!-- Styles -->
 <style>
 /* Cart Image Styles */
-.cart-image {
-    text-align: center;
-    margin-bottom: 15px;
-}
+
 
 .cart-preview {
     max-width: 100%;
@@ -219,6 +216,24 @@ window.onload = function () {
 </script>
 <script src="cart.js"></script>
 <script src="products.js"></script>
+<script>
+    function openCart() {
+    document.getElementById("cart-modal").style.display = "block";
+    document.body.classList.add("cart-open");
+    console.log(document.body.classList); // Debugging
+}
 
+function closeCart() {
+    document.getElementById("cart-modal").style.display = "none";
+    document.body.classList.remove("cart-open");
+    console.log(document.body.classList); // Debugging
+}
+
+    
+</script>
+ 
 </body>
+
+   
 </html>
+
