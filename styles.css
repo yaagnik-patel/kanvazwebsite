@@ -472,9 +472,9 @@ body.cart-open {
 }
 
 .cart-font {
-    font-family:'Bebas Neue', cursive;
+    font-family:'Bebas Neue', cursive;;
     margin: 0;
-    padding:4%;
+    padding: 0;
 }
 
 .cart-sidebar.open{
