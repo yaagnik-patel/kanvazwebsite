@@ -619,7 +619,7 @@ function selectSize(productName, size, price, button) {
     button.classList.add('active');
 
     // Update the displayed price
-    document.getElementById(`price-${productName}`).textContent = `$${price.toFixed(2)}`;
+    document.getElementById(`price-${productName}`).textContent = `₹${price.toFixed(2)}`;
 }
 
 // Function to add Polaroid to Cart with fixed quantity of 9
