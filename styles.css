@@ -204,7 +204,7 @@ body.cart-open {
     color:#000;
     border:1px solid #000;
     border-radius:6px;
-    box-shadow:5px 4px 0 #000;
+    box-shadow:5px 4px 0 #57b784;
     padding:1px 55px;
     font-size:16px;
     cursor:pointer;
@@ -418,6 +418,7 @@ body.cart-open {
 .cart-footer {
     position: sticky;
     margin-top:-20%;
+    margin-left:-1%;
     border-top: 1px solid #ddd;
     background: #fff;
     padding: 10px;
@@ -482,10 +483,7 @@ body.cart-open {
     font-size:30px;
     cursor:pointer
 }
-.cart-items-list{
-    max-height:70%;
-    overflow-y:auto
-}
+
 .cart-item{
     position:relative
 }
@@ -520,7 +518,7 @@ body.cart-open {
     right:0;
     border-radius:6px;
     width:209px;
-    height:99%;
+    height:97%;
     background-color:#fff;
     box-shadow:-4px 0 6px rgb(0 0 0 / .2);
     padding:20px;
@@ -533,7 +531,7 @@ body.cart-open {
 
  
 .cart-image {
-    margin: 0; /* Removes any margin */
+    margin: 1%; /* Removes any margin */
     padding: 0; /* Optionally reset padding if needed */
 }
 
@@ -548,7 +546,7 @@ body.cart-open {
 }
 .cart-items-list{
     flex-grow:1;
-    max-height:60vh;
+    max-height:495px;
     overflow-y:auto;
     padding-right:10px
 }
