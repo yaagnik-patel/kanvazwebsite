@@ -589,7 +589,7 @@ function showCategory(category) {
                         <img src="${product.imageUrl}" alt="${product.name}" class="product-image">
                     </div>
                     <h3 class="card-title">${product.name}</h3>
-                    <p class="card-price" id="price-${product.name}">$${product.size[defaultSize].toFixed(2)}</p>
+                    <p class="card-price" id="price-${product.name}">₹${product.size[defaultSize].toFixed(2)}</p>
                     <div class="size-selection">
                         ${Object.keys(product.size).map(size => `
                             <button class="card-btn" onclick="selectSize('${product.name}', '${size}', ${product.size[size]}, this)">
