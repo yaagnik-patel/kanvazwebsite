@@ -302,15 +302,100 @@ const products = {
     ],
     movie: [
         {
-            name: 'Pink Floyd Poster',
-            imageUrl: 'images/music/pinkfloyd.jpg',
+            name: 'Iron Hero Poster – Futuristic Armor & Power Art',
+            imageUrl: 'image/Product/Poater/movie/movie (1).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Taylor Swift Poster',
-            imageUrl: 'image/Product/Poater/music/Taylor-1.jpg',
+            name: 'Spider-Man Multiverse Print – Epic Action Scene',
+            imageUrl: 'image/Product/Poater/movie/movie (2).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'Weasley Pop Art Poster – Harry Potter Wall Decor',
+            imageUrl: 'image/Product/Poater/movie/movie (3).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },{
+            name: 'Hellverine Marvel Poster – Wolverine x Ghost Rider Crossover Art',
+            imageUrl: 'image/Product/Poater/movie/movie (4).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },{
+            name: 'Tony Stark Iron Man Art – Half Mask Marvel Wall Print',
+            imageUrl: 'image/Product/Poater/movie/movie (5).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },{
+            name: 'Tony Stark HERO Poster – Marvel Tribute Wall Art',
+            imageUrl: 'image/Product/Poater/movie/movie (6).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },{
+            name: 'The Boys Amazon Prime Poster – Gritty Superhero Wall Art',
+            imageUrl: 'image/Product/Poater/movie/movie (7).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },{
+            name: 'John Wick Gunfight Poster – High-Quality Action Decor',
+            imageUrl: 'image/Product/Poater/movie/movie (8).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },{
+            name: 'Spider-Man: Across the Spider-Verse Poster – Multiverse Adventure Art',
+            imageUrl: 'image/Product/Poater/movie/movie (9).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },{
+            name: 'The Boys Homelander Poster – Dark Superhero Wall Art',
+            imageUrl: 'image/Product/Poater/movie/movie (11).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },{
+            name: 'T’Challa Black Panther Wall Art – Long Live the King',
+            imageUrl: 'image/Product/Poater/movie/movie (12).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },{
+            name: 'Black Panther Mask Poster – Purple Neon Marvel Print',
+            imageUrl: 'image/Product/Poater/movie/movie (13).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },{
+            name: 'Captain Jack Sparrow Poster – Pirates of the Caribbean Art Print',
+            imageUrl: 'image/Product/Poater/movie/movie (14).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },{
+            name: 'Captain America Poster – Avengers Endgame Artwork Print',
+            imageUrl: 'image/Product/Poater/movie/movie (15).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },{
+            name: 'Harry Potter Movie Poster – Iconic Wizard Artwork',
+            imageUrl: 'image/Product/Poater/movie/movie (16).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },{
+            name: 'Tony Stark Iron Man Poster – Avengers Superhero Wall Art',
+            imageUrl: 'image/Product/Poater/movie/movie (17).webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
@@ -344,125 +429,124 @@ const products = {
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
+        },{
+            name: 'E=MC² Einstein Poster – Inspirational Physics Wall Print',
+            imageUrl: 'image/Product/Poater/movie/movie (10).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
         }
     ],
 
     car: [
         {
-            name: 'Coders Poster',
+            name: 'Mustang Night Drift – Neon Speed Aesthetic',
             imageUrl: 'image/Product/Poater/car/1.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Coders Poster',
+            name: 'Classic Porsche 911 – Retro Sports Car Poster',
             imageUrl: 'image/Product/Poater/car/2.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Coders Poster',
+            name: 'Nissan Skyline GT-R – JDM Drift Poster',
             imageUrl: 'image/Product/Poater/car/3.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Coders Poster',
+            name: 'McLaren 17 – Speed & Luxury Wall Art',
             imageUrl: 'image/Product/Poater/car/4.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Coders Poster',
+            name: 'McLaren Senna – The Ultimate Hypercar Poster',
             imageUrl: 'image/Product/Poater/car/5.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Coders Poster',
+            name: 'Fast & Furious Supra Poster – JDM Dream Car',
             imageUrl: 'image/Product/Poater/car/6.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Coders Poster',
+            name: 'Rolls-Royce Classic Poster – Timeless Luxury Art',
             imageUrl: 'image/Product/Poater/car/7.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Coders Poster',
+            name: 'Porsche 911 GT3 RS Poster – Ultimate Track Machine',
             imageUrl: 'image/Product/Poater/car/8.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Coders Poster',
+            name: 'GT-R R35 Wall Art – Street Racer Aesthetic',
             imageUrl: 'image/Product/Poater/car/9.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Coders Poster',
+            name: 'Mitsubishi Lancer Evo X Poster – JDM Rally Legend',
             imageUrl: 'image/Product/Poater/car/10.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Coders Poster',
+            name: 'MINI Cooper Poster – Iconic Hot Hatch Art',
             imageUrl: 'image/Product/Poater/car/11.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Coders Poster',
+            name: 'Mercedes-AMG GT Poster – The Ultimate Track Beast',
             imageUrl: 'image/Product/Poater/car/12.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Coders Poster',
+            name: 'Porsche 911 RSR Poster – Legendary Motorsport Art',
             imageUrl: 'image/Product/Poater/car/13.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Coders Poster',
+            name: 'Toyota Supra MK5 Print – Turbocharged Street Icon',
             imageUrl: 'image/Product/Poater/car/14.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Coders Poster',
+            name: 'Toyota Supra A90 Print – High-Speed Drift Action',
             imageUrl: 'image/Product/Poater/car/15.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
         },
         {
-            name: 'Coders Poster',
+            name: 'BMW M2 Competition Poster – Ultimate Driving Machine',
             imageUrl: 'image/Product/Poater/car/16.webp',
-            size: {
-                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
-            }
-        },
-        {
-            name: 'Coders Poster',
-            imageUrl: 'image/Product/Poater/car/17.webp',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
