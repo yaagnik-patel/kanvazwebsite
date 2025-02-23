@@ -194,11 +194,7 @@ body.cart-open {
  .catalog{
     padding:20px
 }
-.total-price{
-    font-size:18px;
-    margin-bottom:20px;
-    font-weight:700
-}
+
  .checkout-btn{
     background-color:#fff;
     color:#000;
@@ -242,10 +238,12 @@ body.cart-open {
     background-color:#d32f2f
 }
 .total-price{
+    font-weight: bold;
+    font-family:'Nunito', sans-serif;;
+    font-size:128%;
     margin-top:auto;
-    font-size:1.2em;
     text-align:right;
-    margin: 0%;
+    margin: 7%;
     padding: 0%;
 }
 .product-size-buttons{
@@ -416,14 +414,17 @@ body.cart-open {
     margin:6px 0
 }
 .cart-footer {
-    position: sticky;
-    margin-top:-20%;
-    margin-left:-1%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     border-top: 1px solid #ddd;
     background: #fff;
     padding: 10px;
-    height: 60px; /* Adjust height if needed */
+    height: 116px;
+    text-align: center;
 }
+
 
 .card-price{
     font-size:16px;
@@ -471,8 +472,9 @@ body.cart-open {
 }
 
 .cart-font {
+    font-family:'Bebas Neue', cursive;
     margin: 0;
-    padding: 0;
+    padding:4%;
 }
 
 .cart-sidebar.open{
@@ -546,7 +548,7 @@ body.cart-open {
 }
 .cart-items-list{
     flex-grow:1;
-    max-height:495px;
+    max-height:684px;
     overflow-y:auto;
     padding-right:10px
 }
@@ -565,7 +567,11 @@ body.cart-open {
     padding-bottom:10px
 }
 .cart-item-details{
+    font-family:'Nunito', sans-serif;
     flex-grow:1
+}
+.prodcut-price{
+    font-family:'Bebas Neue', cursive;;
 }
 .quantity-control button{
     margin:0 5px;
@@ -599,6 +605,14 @@ body.cart-open {
 .cart-icon-img{
     width:70%;
     height:auto
+}
+.product-price{
+    font-family:'Bebas Neue', cursive;
+}
+.product-name{
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
 }
 .cart-count{
     position:absolute;
@@ -647,7 +661,7 @@ body.cart-open {
     color: #000;
     text-align: center;
     padding: 15px 0;
-    font-family: 'Nunito', sans-serif;
+    font-family:'Bebas Neue', cursive;
     width: 100%;
     box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -724,7 +738,7 @@ body.cart-open {
     border-radius:3px;
     box-shadow:2px 1px 0 #000;
     margin-top:-27%;
-    height:70px;
+    height:90px;
     margin-right:10px;
     object-fit:cover
 }
