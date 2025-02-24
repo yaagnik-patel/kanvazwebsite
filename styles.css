@@ -552,9 +552,9 @@ body.cart-open {
 }
 .cart-items-list{
     flex-grow:1;
-    max-height:605px;
+    max-height:576px;
     overflow-y:auto;
-    padding-right:10px
+    padding-right:10px;
 }
 .cart-items-list::-webkit-scrollbar{
     width:6px
