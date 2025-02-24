@@ -551,7 +551,7 @@ body.cart-open {
 }
 .cart-items-list{
     flex-grow:1;
-    max-height:544px;
+    max-height:601px;
     overflow-y:auto;
     padding-right:10px;
 }
