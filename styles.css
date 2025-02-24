@@ -568,7 +568,7 @@ body.cart-open {
     align-items:center;
     margin-bottom:1px;
     border-bottom:1px solid #ddd;
-    padding-bottom:10px
+    padding-bottom:5px;
 }
 .cart-item-details{
     font-family:'Nunito', sans-serif;
