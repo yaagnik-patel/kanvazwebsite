@@ -416,19 +416,6 @@ body.cart-open {
     border-radius:50px;
     margin:6px 0
 }
-.cart-footer {
-    position: fixed;
-    bottom: 0;
-    padding: 0%;
-    left: 0;
-    width: 100%;
-    border-top: 1px solid #ddd;
-    background: #fff;
-    padding: 10px;
-    height:187px;
-    text-align: center;
-}
-
 
 .card-price{
     font-size:16px;
@@ -473,6 +460,18 @@ body.cart-open {
     .card{
         width:100%
     }
+}
+.cart-footer {
+    position: fixed;
+    bottom: 0;
+    padding: 0%;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    background: #fff;
+    padding: 10px;
+    height:187px;
+    text-align: center;
 }
 
 .cart-font {
@@ -523,7 +522,7 @@ body.cart-open {
     top:0;
     right:0;
     border-radius:6px;
-    width:209px;
+    width:284px;
     height:97%;
     background-color:#fff;
     box-shadow:-4px 0 6px rgb(0 0 0 / .2);
