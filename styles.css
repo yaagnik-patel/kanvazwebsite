@@ -566,7 +566,7 @@ body.cart-open {
 .cart-item{
     display:flex;
     align-items:center;
-    margin-bottom:15px;
+    margin-bottom:1px;
     border-bottom:1px solid #ddd;
     padding-bottom:10px
 }
