@@ -644,7 +644,7 @@ function addPolaroidToCart(productName, imageUrl, unitPrice) {
     } else {
         cartItems.push(cartItem); // Add new item if not exists
     }
-
+    updateCartStorage();
     updateCartDisplay();
     updateCartCount();
 }

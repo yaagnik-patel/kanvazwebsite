@@ -12,6 +12,11 @@
     
     <title>KANVAZ.in</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function viewCart() {
+            window.location.href = "cart.html"; // Redirect to cart.html
+        }
+    </script>
     
     <script>
         function checkScreenSize() {
@@ -93,37 +98,6 @@
         <p>Select a category to view products.</p>
     </div>
 </main>
-
-<!-- Cart Sidebar Modal -->
-<div id="cart-modal" class="cart-sidebar">
-    <div class="cart-sidebar-content">
-        <span class="close-cart" onclick="closeCart()">&times;</span>
-        <h2 class="cart-font">Your Cart</h2>
-
-        <!-- New Image inside Cart -->
-        <div class="cart-image">
-            <img src="image/2.jpg" alt="Shopping Cart" class="cart-preview">
-        </div>
-
-        <div id="cart-items-list" class="cart-items-list">
-            <!-- Cart items will be dynamically added here -->
-        </div>
-        <div class="cart-footer">
-            <p class="offer-note" style="font-size: 12px; color: #ff0000; text-align: center; margin: 0%;">
-                * Offer will be applied after order <br>confirmation in WhatsApp.
-            </p>
-            <div class="total-price">
-                <p class="total-price-latter">Total: <strong>₹<span id="total-price">0.00</span></strong></p>
-            </div>
-            <button class="checkout-btn" onclick="proceedToCheckout()">
-                Proceed to <span style="display:block;">Checkout</span>
-            </button>
-            
-            <!-- Offer Note -->
-            
-        </div>
-    </div>
-</div>
 
 <!-- Popup Ad Modal -->
 <div id="popup-ad" class="popup-ad">

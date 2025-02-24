@@ -1,27 +1,43 @@
-let cartItems = [];
+let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+function updateCartStorage() {
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+}
+
+// Ensure cart elements exist before updating the cart
+document.addEventListener("DOMContentLoaded", function () {
+    if (document.getElementById('cart-items-list')) {
+        updateCartDisplay();
+    }
+    if (document.getElementById('cart-count')) {
+        updateCartCount();
+    }
+});
 
 // Open the cart sidebar
 function viewCart() {
-    document.getElementById('cart-modal').classList.add('open');
-    updateCartDisplay();
+    window.location.href = "cart.html"; // Redirects to the cart page
 }
 
-// Close the cart sidebar
 function closeCart() {
-    document.getElementById('cart-modal').classList.remove('open');
+    const cartModal = document.getElementById('cart-modal');
+    if (cartModal) {
+        cartModal.style.display = 'none'; // Hide the cart modal
+    }
+    window.location.href = 'index.html'; // Redirect to the homepage
 }
+
+
 
 // Add item to cart
 function addItemToCart(productName, price, imageUrl, size) {
     price = parseFloat(price); // Ensure price is always a number
 
-    // Check if the item with the same name and size already exists
     const existingItem = cartItems.find(item => item.name === productName && item.size === size);
 
     if (existingItem) {
-        existingItem.quantity += 1; // Increase quantity if same product & size exist
+        existingItem.quantity += 1;
     } else {
-        // Add new product with size variation
         cartItems.push({ name: productName, price, quantity: 1, imageUrl, size });
     }
 
@@ -34,22 +50,27 @@ function updateCartDisplay() {
     const cartItemsList = document.getElementById('cart-items-list');
     const totalPriceElem = document.getElementById('total-price');
     const cartFooter = document.querySelector('.cart-footer');
+
+    // Check if elements exist before modifying them
+    if (!cartItemsList || !totalPriceElem || !cartFooter) {
+        console.error("Cart elements not found in the DOM.");
+        return;
+    }
+
     cartItemsList.innerHTML = '';
 
     let totalPrice = 0;
 
     if (cartItems.length === 0) {
-        // If cart is empty, show a message and hide the checkout section
         cartItemsList.innerHTML = `
             <p class="empty-cart-message">Your cart is empty.</p>
             <button class="continue-shopping-btn" onclick="continueShopping()">Continue Shopping</button>
         `;
         totalPriceElem.textContent = '0.00';
-        cartFooter.style.display = 'none'; // Hide total and checkout
+        cartFooter.style.display = 'none';
         return;
     }
 
-    // Show checkout section when cart has items
     cartFooter.style.display = 'block';
 
     cartItems.forEach((item, index) => {
@@ -80,7 +101,7 @@ function updateCartDisplay() {
 // Continue Shopping - Closes Cart and Navigates Back
 function continueShopping() {
     closeCart();
-    window.location.href = 'index.html'; // Change this if product page has a different path
+    window.location.href = 'index.html';
 }
 
 // Change item quantity (+ or -)
@@ -97,6 +118,7 @@ function changeQuantity(index, change) {
 // Remove an item from the cart
 function removeFromCart(index) {
     cartItems.splice(index, 1);
+    updateCartStorage();
     updateCartDisplay();
     updateCartCount();
 }
@@ -127,5 +149,3 @@ function proceedToCheckout() {
     const whatsappURL = `https://wa.me/+917046145944?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
 }
-
-
