@@ -197,6 +197,7 @@ body.cart-open {
 
  .checkout-btn{
     background-color:#fff;
+    margin-top:-7%;
     color:#000;
     border:1px solid #000;
     border-radius:6px;
@@ -237,13 +238,15 @@ body.cart-open {
 .remove-item-btn:hover{
     background-color:#d32f2f
 }
+.total-price-latter{
+    margin-top: -3%;
+}
 .total-price{
     font-weight: bold;
     font-family:'Nunito', sans-serif;;
     font-size:128%;
-    margin-top:auto;
     text-align:right;
-    margin: 7%;
+    margin:7%;
     padding: 0%;
 }
 .product-size-buttons{
@@ -416,12 +419,13 @@ body.cart-open {
 .cart-footer {
     position: fixed;
     bottom: 0;
+    padding: 0%;
     left: 0;
     width: 100%;
     border-top: 1px solid #ddd;
     background: #fff;
     padding: 10px;
-    height: 116px;
+    height:122px;
     text-align: center;
 }
 
