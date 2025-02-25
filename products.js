@@ -648,19 +648,21 @@ function addPolaroidToCart(productName, imageUrl, unitPrice) {
     updateCartDisplay();
     updateCartCount();
 }
-function addToCart(productName, imageUrl) {
+function addToCart(productName, imageUrl, event) {
+    if (event) event.preventDefault(); // Prevent form submission behavior
+
     if (!selectedSize[productName]) {
         alert('Please select a size before adding to the cart.');
         return;
     }
 
     const size = selectedSize[productName]; // Get the selected size
-    
+
     // Find the product in any category
     let foundProduct = null;
     for (const category in products) {
         foundProduct = products[category].find(product => product.name === productName);
-        if (foundProduct) break; // Stop searching once found
+        if (foundProduct) break;
     }
 
     if (!foundProduct) {
@@ -670,36 +672,21 @@ function addToCart(productName, imageUrl) {
 
     const price = foundProduct.size[size]; // Get price of selected size
 
-    const cartItem = {
-        name: productName,
-        size: size,
-        price: price,
-        imageUrl: imageUrl,
-        quantity: 1
-    };
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
     // Check if the item is already in the cart
-    const existingItemIndex = cartItems.findIndex(item => 
-        item.name === productName && item.size === size
-    );
+    const existingItemIndex = cartItems.findIndex(item => item.name === productName && item.size === size);
 
     if (existingItemIndex !== -1) {
         cartItems[existingItemIndex].quantity += 1; // Increase quantity if exists
     } else {
-        cartItems.push(cartItem); // Add new item if not exists
+        cartItems.push({ name: productName, size, price, imageUrl, quantity: 1 }); // Add new item
     }
 
-    updateCartDisplay();
-    updateCartCount();
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
-
-    // Reset size button color after adding to cart
-    resetSizeButtonColor();
+    updateCartCount(); // Ensure cart count updates immediately
 }
-
-window.onload = function() {
-    showCategory('polaroid'); // Default category
-};
 
 function preloadImages() {
     for (const category in products) {
@@ -713,4 +700,7 @@ function preloadImages() {
     }
 }
 
+window.onload = function() {
+    showCategory('polaroid'); // Automatically load Polaroid products
+};
 
