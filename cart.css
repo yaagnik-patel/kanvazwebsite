@@ -5,7 +5,7 @@ body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color:white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,7 +135,7 @@ h2 {
 /* Cart Footer */
 .cart-footer {
     text-align: center;
-    padding-top: 20px;
+    padding-top:27px;
 }
 
 /* Offer Note */
@@ -148,12 +148,10 @@ h2 {
 
 /* Total Price */
 .total-price {
-    font-size: 20px;
+    margin: -5%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
     font-weight: bold;
-}
-
-.total-price-latter {
-    margin-top: 0;
 }
 
 /* Checkout Button */
