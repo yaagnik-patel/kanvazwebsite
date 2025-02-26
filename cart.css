@@ -191,6 +191,44 @@ h2 {
     }
 }
 
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #cart-page {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .cart-items-list {
+        max-height:381px;
+    }
+
+    .checkout-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    #cart-page {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .cart-items-list {
+        max-height: auto;
+        min-height: 300px;
+        overflow-y: auto;
+    }
+
+    .checkout-btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 18px;
+    }
+}
+
 /* Close Button (Positioned at Top Left) */
 .close-cart {
     font-size: 30px;
