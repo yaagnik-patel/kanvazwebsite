@@ -1,6 +1,6 @@
 {
-    "name": "My App",
-    "short_name": "App",
+    "name": "Kanvaz",
+    "short_name": "kanvaz",
     "start_url": "/",
     "display": "standalone",
     "theme_color": "#000000",
