@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
+   <!-- <script>
         document.addEventListener("contextmenu", function (event) {
           event.preventDefault();
         });
       </script>
-      
+    -->
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3HHHJGZ8CQ"></script>
 <script>
@@ -89,7 +89,6 @@
         <span class="icon-close close-announcement-bar"></span>
     </div>
 </div>
-
 <!-- Categories Section -->
 <section class="categories">
     <div class="categories-wrapper">
@@ -111,8 +110,94 @@
         <div class="category-item" onclick="showCategory('Motivation')">
             <img src="image/Product/CAT-image/MOTIVATION 1.webp" alt="Motivation Posters">
         </div>
+        <!-- Customized Poster Option -->
+        <div class="category-item" onclick="openPopup()">
+            <img src="image/Product/CAT-image/custom.webp" alt="Customized Poster">
+        </div>
     </div>
 </section>
+
+<!-- Popup for Customized Poster -->
+<div id="customPosterPopup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Create Your Custom Poster</h2>
+        <label for="posterImage">Upload Image:</label>
+        <input type="file" id="posterImage" accept="image/*">
+        
+        <label for="posterSize">Select Size:</label>
+        <select id="posterSize">
+            <option value="A4">A4</option>
+            <option value="A3">A3</option>
+            <option value="A2">A2</option>
+            <option value="A1">A1</option>
+        </select>
+        
+        <button onclick="sendToWhatsApp()">Send via WhatsApp</button>
+    </div>
+</div>
+
+<style>
+/* Popup Styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+.popup-content {
+    text-align: center;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+</style>
+
+<script>
+function openPopup() {
+    document.getElementById("customPosterPopup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("customPosterPopup").style.display = "none";
+}
+
+function sendToWhatsApp() {
+    let fileInput = document.getElementById("posterImage");
+    let size = document.getElementById("posterSize").value;
+    
+    if (!fileInput.files.length) {
+        alert("Please upload an image.");
+        return;
+    }
+    
+    let file = fileInput.files[0];
+    let reader = new FileReader();
+    
+    reader.onload = function(event) {
+        let imageUrl = event.target.result;
+        let message = `Hello, I want a customized poster. \nSize: ${size} \nImage: (Attached Below)`;
+        
+        let whatsappNumber = "YOUR_PHONE_NUMBER";  // Replace with your WhatsApp number
+        let whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+        
+        // Open WhatsApp link
+        window.open(whatsappUrl, "_blank");
+    };
+    
+    reader.readAsDataURL(file);
+}
+</script>
 
 <!-- Product Display Section -->
 <main class="product-display">

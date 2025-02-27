@@ -621,7 +621,6 @@ function selectSize(productName, size, price, button) {
     // Update the displayed price
     document.getElementById(`price-${productName}`).textContent = `₹${price.toFixed(2)}`;
 }
-
 // Function to add Polaroid to Cart with fixed quantity of 9
 function addPolaroidToCart(productName, imageUrl, unitPrice) {
     const quantity = 9; // Fixed quantity per order
@@ -657,6 +656,9 @@ function addToCart(productName, imageUrl, event) {
     }
 
     const size = selectedSize[productName]; // Get the selected size
+
+     const buttons = document.querySelectorAll(`[data-product='${productName}'] .card-btn`);
+    buttons.forEach(btn => btn.classList.remove('active'));
 
     // Find the product in any category
     let foundProduct = null;
