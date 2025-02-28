@@ -302,14 +302,14 @@ const products = {
     ],
     movie: [{
         name: 'The Office Michael Scott Poster - "Thats What She Said" Wall Art',
-        imageUrl: 'image/Product/Poater/movie/movie (18).webp',
+        imageUrl: 'image/Product/Poater/movie/movie (18).jpg',
         size: {
             A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
         }
     },
         {
             name: 'The Batman Poster - Dark Knight Art Print | DC Comics Wall Decor',
-            imageUrl: 'image/Product/Poater/movie/movie (19).webp',
+            imageUrl: 'image/Product/Poater/movie/movie (19).jpg',
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
