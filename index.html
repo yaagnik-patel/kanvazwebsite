@@ -1,26 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    let announcementBar = document.querySelector(".announcement-bar");
-    let header = document.querySelector(".header"); // Ensure header has this class
-    let headerHeight = header.offsetHeight; // Get header height
-
-    function handleScroll() {
-        let scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-        if (scrollTop >= headerHeight) {
-            announcementBar.classList.add("sticky");
-        } else {
-            announcementBar.classList.remove("sticky");
-        }
-    }
-
-    window.addEventListener("scroll", handleScroll);
-});
-
-</script>
+<head> 
 <!--<script>
         document.addEventListener("contextmenu", function (event) {
           event.preventDefault();
@@ -94,9 +74,6 @@
     <div class="announcement-bar">
         <div class="wrap-announcement-bar">
             <div class="box-sw-announcement-bar speed-1">
-                <div class="announcement-bar-item">
-                    <p> OUR PRODUCTS, HANDCRAFTED WITH LOVE! </p>
-                </div>
                 <div class="announcement-bar-item">
                     <p> POLAROID, POSTER, & MORE </p>
                 </div>

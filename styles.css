@@ -52,14 +52,14 @@ body.cart-open {
 }
 .announcement-bar {
     width: 100%;
-    background: black;
-    color: #00ff99;
+    background: #F5F5F5;
+    color: #111111;
     font-size: 16px;
     font-weight: 700;
     white-space: nowrap;
     overflow: hidden;
     position: relative; /* Initially relative */
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;/* Smooth transition */
+    transition: top 0.3s ease-in-out; /* Smooth transition */
 }
 .announcement-bar.sticky {
     position: fixed;
@@ -67,19 +67,6 @@ body.cart-open {
     left: 0;
     z-index: 9999;
     box-shadow: 0px 4px 10px rgba(0, 255, 153, 0.2); /* Subtle shadow for effect */
-}
-
-
-/* Smooth appearance when it becomes sticky */
-.announcement-bar.smooth-show {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-/* Smooth hiding when scrolling down */
-.announcement-bar.hide {
-    transform: translateY(-100%);
-    opacity: 0;
 }
  .wrap-announcement-bar{
     align-items:center;
