@@ -300,7 +300,20 @@ const products = {
             }
         }
     ],
-    movie: [
+    movie: [{
+        name: 'The Office Michael Scott Poster - "Thats What She Said" Wall Art',
+        imageUrl: 'image/Product/Poater/movie/movie (18).webp',
+        size: {
+            A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+        }
+    },
+        {
+            name: 'The Batman Poster - Dark Knight Art Print | DC Comics Wall Decor',
+            imageUrl: 'image/Product/Poater/movie/movie (19).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
         {
             name: 'Iron Hero Poster – Futuristic Armor & Power Art',
             imageUrl: 'image/Product/Poater/movie/movie (1).webp',
@@ -401,7 +414,20 @@ const products = {
             }
         }
     ],
-    Motivation: [
+    Motivation: [{
+        name: 'Yes You Can Wall Print - Positive Vibes Aesthetic Decor',
+        imageUrl: 'image/Product/Poater/Motivatinal/moti (2).jpg',
+        size: {
+            A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+        }
+    },
+    {
+        name: 'Manifestation Wall Poster - Manifest Your Goals Aesthetic Decor',
+        imageUrl: 'image/Product/Poater/Motivatinal/moti (3).jpg',
+        size: {
+            A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+        }
+    },
         {
             name: 'Code in Progress',
             imageUrl: 'image/Product/Poater/Motivatinal/moti (1).jpg',
