@@ -50,16 +50,36 @@ body.cart-open {
     color:#fff;
     text-align:center
 }
- .announcement-bar{
-    margin-top:-2%;
-    width:101%;
-    background:#fff;
-    color:#000;
-    font-size:16px;
-    font-weight:700;
-    white-space:nowrap;
-    overflow:hidden;
-    position:relative;
+.announcement-bar {
+    width: 100%;
+    background: black;
+    color: #00ff99;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative; /* Initially relative */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;/* Smooth transition */
+}
+.announcement-bar.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    box-shadow: 0px 4px 10px rgba(0, 255, 153, 0.2); /* Subtle shadow for effect */
+}
+
+
+/* Smooth appearance when it becomes sticky */
+.announcement-bar.smooth-show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Smooth hiding when scrolling down */
+.announcement-bar.hide {
+    transform: translateY(-100%);
+    opacity: 0;
 }
  .wrap-announcement-bar{
     align-items:center;
@@ -73,6 +93,7 @@ body.cart-open {
     will-change:transform
 }
  .announcement-bar-item{
+
     display:inline-block;
     padding:0 50px;
     text-transform:uppercase;
@@ -80,7 +101,7 @@ body.cart-open {
     letter-spacing:2px;
     transition:transform 0.3s ease;
     font-weight:700;
-    text-shadow:0 0 5px #57b784,0 0 10px #57b784,0 0 20px #57b784,0 0 40px #57b784;
+    text-shadow:0 0 5px #00ff99,0 0 10px #00ff99,0 0 20px #00ff99,0 0 40px #00ff99;
     animation:neonGlow 1.5s infinite alternate
 }
  .announcement-bar-item:hover{
@@ -97,10 +118,10 @@ body.cart-open {
 }
 @keyframes neonGlow{
     0%{
-        text-shadow:0 0 5px #57b784,0 0 10px #57b784,0 0 20px #57b784,0 0 30px #57b784
+        text-shadow:0 0 5px #00ff99,0 0 10px #00ff99,0 0 20px #00ff99,0 0 30px #00ff99
     }
     100%{
-        text-shadow:0 0 7px #57b784,0 0 14px #57b784,0 0 25px #57b784,0 0 50px #57b784
+        text-shadow:0 0 7px #00ff99,0 0 14px #00ff99,0 0 25px #00ff99,0 0 50px #00ff99
     }
 }
 .sticky-container{
@@ -120,7 +141,7 @@ body.cart-open {
     background:#fff;
     z-index:1001;
     position:relative;
-    width:93%
+    width:94%
 }
 @media (min-width:768px){
     .header{

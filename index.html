@@ -2,11 +2,31 @@
 <html lang="en">
 <head>
     <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    let announcementBar = document.querySelector(".announcement-bar");
+    let header = document.querySelector(".header"); // Ensure header has this class
+    let headerHeight = header.offsetHeight; // Get header height
+
+    function handleScroll() {
+        let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        if (scrollTop >= headerHeight) {
+            announcementBar.classList.add("sticky");
+        } else {
+            announcementBar.classList.remove("sticky");
+        }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+});
+
+</script>
+<!--<script>
         document.addEventListener("contextmenu", function (event) {
           event.preventDefault();
         });
       </script>
-      
+      -->
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3HHHJGZ8CQ"></script>
 <script>
@@ -71,25 +91,31 @@
             </div>
         </div>
     </div>
-
-    <div class="announcement-bar bg_violet">
+    <div class="announcement-bar">
         <div class="wrap-announcement-bar">
             <div class="box-sw-announcement-bar speed-1">
                 <div class="announcement-bar-item">
-                    <p>OUR PRODUCTS ,</p>
+                    <p> OUR PRODUCTS, HANDCRAFTED WITH LOVE! </p>
                 </div>
                 <div class="announcement-bar-item">
-                    <p>POLAROID, POSTER,</p>
+                    <p> POLAROID, POSTER, & MORE </p>
                 </div>
                 <div class="announcement-bar-item">
-                    <p>FOLLOW ON INSTAGRAM @kanvaz.in</p>
+                    <p> BUY 3 & GET 2 FREE – TOTAL 5 POSTERS! </p>
+                </div>
+                <div class="announcement-bar-item">
+                    <p> BUY 5 & GET 3 FREE – TOTAL 8 POSTERS! </p>
+                </div>
+                <div class="announcement-bar-item">
+                    <p> BUY 10 & GET 5 FREE – TOTAL 15 POSTERS! </p>
+                </div>
+                <div class="announcement-bar-item">
+                    <p> FOLLOW US ON INSTAGRAM @kanvaz.in </p>
                 </div>
             </div>
         </div>
-        <span class="icon-close close-announcement-bar"></span>
     </div>
-</div>
-
+    
 <!-- Categories Section -->
 <section class="categories">
     <div class="categories-wrapper">
