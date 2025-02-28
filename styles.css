@@ -58,59 +58,83 @@ body.cart-open {
     font-weight: 700;
     white-space: nowrap;
     overflow: hidden;
-    position: relative; /* Initially relative */
-    transition: top 0.3s ease-in-out; /* Smooth transition */
+    position: relative;
+    transition: top 0.3s ease-in-out;
 }
+
 .announcement-bar.sticky {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
-    box-shadow: 0px 4px 10px rgba(0, 255, 153, 0.2); /* Subtle shadow for effect */
+    box-shadow: 0px 4px 10px rgba(0, 255, 153, 0.2);
 }
- .wrap-announcement-bar{
-    align-items:center;
-    justify-content:flex-start;
-    width:100%;
-    overflow:hidden
-}
- .box-sw-announcement-bar{
-    display:flex;
-    animation:slide-har 10s linear infinite;
-    will-change:transform
-}
- .announcement-bar-item{
 
-    display:inline-block;
-    padding:0 50px;
-    text-transform:uppercase;
-    font-size:18px;
-    letter-spacing:2px;
-    transition:transform 0.3s ease;
-    font-weight:700;
-    text-shadow:0 0 5px #00ff99,0 0 10px #00ff99,0 0 20px #00ff99,0 0 40px #00ff99;
-    animation:neonGlow 1.5s infinite alternate
+.wrap-announcement-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
- .announcement-bar-item:hover{
-    transform:scale(1.05);
-    transition:transform 0.3s ease-in-out
+
+.box-sw-announcement-bar {
+    display: flex;
+    gap: 50px;
+    min-width:500%; /* Ensures content is wide enough */
+    animation: slide-har 20s linear infinite;
+    will-change: transform;
 }
-@keyframes slide-har{
-    0%{
-        transform:translateX(0%)
+
+
+
+.announcement-bar-item {
+    display: inline-block;
+    padding: 0 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family:'Nunito',sans-serif;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease;
+    font-weight: 700;
+    white-space: nowrap;
+    text-shadow: 
+        0 0 5px #00ff99, 
+        0 0 10px #00ff99, 
+        0 0 20px #00ff99, 
+        0 0 40px #00ff99;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+/* Continuous scrolling animation */
+@keyframes slide-har {
+    0% {
+        transform: translateX(0%);
     }
-    100%{
-        transform:translateX(-100%)
+    100% {
+        transform: translateX(-50%);
     }
 }
-@keyframes neonGlow{
-    0%{
-        text-shadow:0 0 5px #00ff99,0 0 10px #00ff99,0 0 20px #00ff99,0 0 30px #00ff99
+
+/* Neon effect */
+@keyframes neonGlow {
+    0% {
+        text-shadow: 
+            0 0 5px #00ff99, 
+            0 0 10px #00ff99, 
+            0 0 20px #00ff99, 
+            0 0 30px #00ff99;
     }
-    100%{
-        text-shadow:0 0 7px #00ff99,0 0 14px #00ff99,0 0 25px #00ff99,0 0 50px #00ff99
+    100% {
+        text-shadow: 
+            0 0 7px #00ff99, 
+            0 0 14px #00ff99, 
+            0 0 25px #00ff99, 
+            0 0 50px #00ff99;
     }
 }
+
 .sticky-container{
     position:sticky;
     top:0;
