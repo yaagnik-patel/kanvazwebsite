@@ -201,7 +201,7 @@ body.cart-open {
 @media (max-width:480px){
     .header img{
         max-height:64px;
-        margin-left: 5%%;
+        margin-left:5%;
     }
      .welcome{
         padding:15px;
