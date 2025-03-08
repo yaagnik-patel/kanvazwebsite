@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    let logo = document.getElementById("splash-logo");
+    let logoContainer = document.querySelector(".logo-container");
 
+    function adjustLogoSize() {
+        let screenHeight = window.innerHeight;
+        let maxHeight = screenHeight * 0.4; // 40% of screen height
+        logo.style.maxHeight = `${maxHeight}px`;
+        logo.style.width = "auto"; // Maintain aspect ratio
+    }
+
+    adjustLogoSize();
+    window.addEventListener("resize", adjustLogoSize);
+});
+</script>
 <!--<script>
         document.addEventListener("contextmenu", function (event) {
           event.preventDefault();
