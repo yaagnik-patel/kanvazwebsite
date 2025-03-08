@@ -816,8 +816,7 @@ body.cart-open {
      box-shadow: 3px 2px 0 #000;
      transform: translateY(2px);
 }
-
- /* Splash Screen - Always on Top */
+/* Splash Screen */
 #splash-screen {
     position: fixed;
     top: 0;
@@ -829,21 +828,23 @@ body.cart-open {
     justify-content: center;
     align-items: center;
     z-index: 99999;
-    animation: fade-out 2s ease-out forwards; /* Auto fade after 2s */
+    transition: opacity 0.5s ease-out; /* Smooth fade-out */
 }
 
+/* Logo Container */
 .logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    position: absolute;
+    opacity: 0; /* Initially hidden, will fade in */
+    transition: opacity 0.3s ease-in;
 }
 
+/* Logo */
 #splash-logo {
-    width: auto; /* Maintain aspect ratio */
-    height: auto; /* Adjust dynamically */
-    max-width: 100%; /* Prevent overflow */
+    width: auto;
+    height: auto;
+    max-width: 100%;
 }
+
 /* Shine Effect */
 .logo-container::before {
     content: "";
