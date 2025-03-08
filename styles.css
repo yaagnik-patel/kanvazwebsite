@@ -64,7 +64,7 @@ body.cart-open {
     font-weight: 700;
     white-space: nowrap;
     overflow: hidden;
-    z-index:9999999;
+    z-index:999;
     transition: top 0.3s ease-in-out;
 }
 
@@ -140,7 +140,6 @@ body.cart-open {
     top:0;
     left:0;
     width:100%;
-    z-index:1000;
     background:#fff;
     box-shadow:0 4px 12px rgb(0 0 0 / .1)
 }
@@ -151,7 +150,6 @@ body.cart-open {
     justify-content:center;
     align-items:center;
     background:#fff;
-    z-index:1001;
     position:relative;
     width:94%
 }
@@ -492,25 +490,7 @@ body.cart-open {
     padding:5px;
     cursor:pointer
 }
-.cart-sidebar{
-    position:fixed;
-    margin-top:-6%;
-    top:0;
-    right:0;
-    border-radius:6px;
-    width:284px;
-    height:104%;
-    background-color:#fff;
-    box-shadow:-4px 0 6px rgb(0 0 0 / .2);
-    padding:20px;
-    z-index:1000;
-    display:flex;
-    flex-direction:column;
-    transform:translateX(100%);
-    transition:transform 0.3s ease-in-out
-}
 
- 
 .cart-image {
     margin: 1%; /* Removes any margin */
     padding: 0; /* Optionally reset padding if needed */
@@ -576,7 +556,7 @@ body.cart-open {
     position:fixed;
     top:20px;
     right:20px;
-    z-index:1000
+    z-index:100
 }
 .cart-icon{
     position:relative;
@@ -820,7 +800,7 @@ body.cart-open {
      width: max-content;
      margin: 20px auto;
      padding: 10px 20px;
-     background-color: #fff;
+     background-color:white;
      color: #000;
      font-size: 16px;
      font-weight: bold;
@@ -832,8 +812,90 @@ body.cart-open {
      transition: all 0.2s ease-in-out;
 }
  .continue-shopping-btn:hover {
-     background-color: #f0f0f0;
+     background-color: white;
      box-shadow: 3px 2px 0 #000;
      transform: translateY(2px);
 }
  
+/* Splash Screen - Always on Top */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Logo Container */
+.logo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Logo Styling */
+#splash-logo {
+    width: 300%;
+    height: auto;
+    display: block;
+}
+
+/* Shine Effect */
+.logo-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0.8) 50%,
+        rgba(255, 255, 255, 0) 70%
+    );
+    transform: skewX(-20deg);
+    animation: shine-effect 1.5s linear 1; /* Runs once for 1.5s */
+}
+
+/* Shine Animation */
+@keyframes shine-effect {
+    0% {
+        left: -200%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Fade-out Animation */
+.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out, visibility 0.5s;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .logo-container {
+        width: 50vw;
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container {
+        width: 60vw;
+        max-width: 120px;
+    }
+}

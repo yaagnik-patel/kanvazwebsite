@@ -57,8 +57,28 @@
         window.addEventListener("load", checkScreenSize);
         window.addEventListener("resize", checkScreenSize);
     </script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+            document.getElementById("splash-screen").classList.add("fade-out");
+        }, 1500); // Fade-out starts at 1.5s
+
+        setTimeout(() => {
+            document.getElementById("splash-screen").style.display = "none";
+        }, 2000); // Splash screen disappears at 2s
+    });
+</script>
+
 </head>
-<body>
+<div id="splash-screen">
+    <div class="logo-container">
+        <img id="splash-logo" src="image/final.webp" alt="Kanvaz Logo">
+    </div>
+</div>
+
+    
     <div class="announcement-bar">
         <div class="wrap-announcement-bar">
             <div class="box-sw-announcement-bar">
