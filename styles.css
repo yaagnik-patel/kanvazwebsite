@@ -834,22 +834,21 @@ body.cart-open {
 
 /* Logo Container */
 .logo-container {
-    width: 120vw; /* 300% bigger */
+    width: 100%;  /* Responsive width */
     max-width: 450px;
-    height: auto;
+    height: auto;  /* Maintain aspect ratio */
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-/* Logo */
 #splash-logo {
-    width: 100%;
-    height: auto;
+    width: 100%;  /* Make it responsive */
+    height: auto;  /* Maintain aspect ratio */
+    max-height: 80vh;  /* Prevent it from being too large */
     display: block;
 }
-
 /* Shine Effect */
 .logo-container::before {
     content: "";
