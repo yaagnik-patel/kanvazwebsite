@@ -832,20 +832,17 @@ body.cart-open {
     transition: opacity 0.5s ease-out;
 }
 
-/* Logo Container */
+/* Logo Container (Dynamically Adjusted) */
 .logo-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40vw;
-    max-width: 150px;
+    position: absolute;
+    width: 120vw; /* 300% increase */
+    max-width: 450px; /* Scales up but remains responsive */
     height: auto;
 }
 
 /* Logo Styling */
 #splash-logo {
-    width: 300%;
+    width: 100%; /* Makes it 3x larger */
     height: auto;
     display: block;
 }
@@ -865,7 +862,7 @@ body.cart-open {
         rgba(255, 255, 255, 0) 70%
     );
     transform: skewX(-20deg);
-    animation: shine-effect 1.5s linear 1; /* Runs once for 1.5s */
+    animation: shine-effect 1.5s linear 1;
 }
 
 /* Shine Animation */
@@ -888,14 +885,14 @@ body.cart-open {
 /* Responsive Fixes */
 @media (max-width: 768px) {
     .logo-container {
-        width: 50vw;
-        max-width: 180px;
+        width: 150vw;
+        max-width: 540px;
     }
 }
 
 @media (max-width: 480px) {
     .logo-container {
-        width: 60vw;
-        max-width: 120px;
+        width: 180vw;
+        max-width: 360px;
     }
 }
