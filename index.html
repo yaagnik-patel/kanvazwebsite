@@ -1,6 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
+    
+<script>
+     document.documentElement.style.opacity = "0";
+    document.addEventListener("DOMContentLoaded", function () {
+        function adjustLogoPosition() {
+            let splashScreen = document.getElementById("splash-screen");
+            let logoContainer = document.querySelector(".logo-container");
+
+            let screenHeight = window.innerHeight; // Available height
+            let logoHeight = logoContainer.clientHeight; // Logo height
+
+            // Center logo dynamically (with some spacing)
+            let topSpacing = (screenHeight - logoHeight) / 2;
+            logoContainer.style.top = `${topSpacing}px`;
+        }
+
+        // Run the adjustment once on load
+        adjustLogoPosition();
+
+        // Adjust on window resize for responsiveness
+        window.addEventListener("resize", adjustLogoPosition);
+
+        // Start animations
+        setTimeout(() => {
+            document.getElementById("splash-screen").classList.add("fade-out");
+        }, 1500);
+
+        setTimeout(() => {
+            document.getElementById("splash-screen").style.display = "none";
+        }, 2000);
+    });
+</script>
+
 <!--<script>
         document.addEventListener("contextmenu", function (event) {
           event.preventDefault();
@@ -58,37 +91,6 @@
         window.addEventListener("resize", checkScreenSize);
     </script>
 
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        function adjustLogoPosition() {
-            let splashScreen = document.getElementById("splash-screen");
-            let logoContainer = document.querySelector(".logo-container");
-
-            let screenHeight = window.innerHeight; // Available height
-            let logoHeight = logoContainer.clientHeight; // Logo height
-
-            // Center logo dynamically (with some spacing)
-            let topSpacing = (screenHeight - logoHeight) / 2;
-            logoContainer.style.top = `${topSpacing}px`;
-        }
-
-        // Run the adjustment once on load
-        adjustLogoPosition();
-
-        // Adjust on window resize for responsiveness
-        window.addEventListener("resize", adjustLogoPosition);
-
-        // Start animations
-        setTimeout(() => {
-            document.getElementById("splash-screen").classList.add("fade-out");
-        }, 1500);
-
-        setTimeout(() => {
-            document.getElementById("splash-screen").style.display = "none";
-        }, 2000);
-    });
-</script>
 
 </head>
 <div id="splash-screen">
