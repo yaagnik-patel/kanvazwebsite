@@ -816,8 +816,8 @@ body.cart-open {
      box-shadow: 3px 2px 0 #000;
      transform: translateY(2px);
 }
- 
-/* Splash Screen - Always on Top */
+
+ /* Splash Screen - Always on Top */
 #splash-screen {
     position: fixed;
     top: 0;
@@ -829,20 +829,23 @@ body.cart-open {
     justify-content: center;
     align-items: center;
     z-index: 99999;
-    transition: opacity 0.5s ease-out;
+    animation: fade-out 2s ease-out forwards; /* Auto fade after 2s */
 }
 
-/* Logo Container (Dynamically Adjusted) */
+/* Logo Container */
 .logo-container {
-    position: absolute;
-    width: 120vw; /* 300% increase */
-    max-width: 450px; /* Scales up but remains responsive */
+    width: 120vw; /* 300% bigger */
+    max-width: 450px;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-/* Logo Styling */
+/* Logo */
 #splash-logo {
-    width: 100%; /* Makes it 3x larger */
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -862,7 +865,7 @@ body.cart-open {
         rgba(255, 255, 255, 0) 70%
     );
     transform: skewX(-20deg);
-    animation: shine-effect 1.5s linear 1;
+    animation: shine-effect 1.5s linear 1; /* Runs once */
 }
 
 /* Shine Animation */
@@ -875,11 +878,15 @@ body.cart-open {
     }
 }
 
-/* Fade-out Animation */
-.fade-out {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-out, visibility 0.5s;
+@keyframes fade-out {
+    0%, 70% {  /* Stay visible for 1 second (50% of 2s) */
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {  /* Fade out in 1 second */
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 /* Responsive Fixes */
