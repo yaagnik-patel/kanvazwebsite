@@ -126,7 +126,10 @@
 <!-- Header Section -->
 <div class="sticky-container">
     <div class="header">
-        <img src="image/final.webp" alt="Kanishk Logo" class="logo">
+        <div class="logo-wrapper">
+            <img src="image/final.webp" alt="Kanvaz Logo" class="logo">
+        </div>
+        
         <div class="cart-icon-container">
             <div class="cart-icon" onclick="viewCart()">
                 <img src="image/cart.png" alt="Cart" class="cart-icon-img">
@@ -191,76 +194,7 @@
 </footer>
 
 
-<style>
-/* Cart Image Styles */
 
-
-.cart-preview {
-    max-width: 100%;
-    border: 1px solid black;
-    border-radius: 4px;
-    box-shadow: 3px 4px black;
-    height: auto;
-}
-
-/* Popup Ad Styles */
-.popup-ad {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s;
-}
-
-.popup-ad.hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.popup-content {
-    position: relative;
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    max-width: 90%;
-    max-height: 80%;
-    overflow: hidden;
-}
-
-.popup-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.close-popup {
-    position: absolute;
-    top: 8px;
-    right: 12px;
-    font-size: 22px;
-    font-weight: bold;
-    color: white;
-    background: red;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-</style>
-
-<!-- Scripts -->
 <script>
 function closePopup() {
     document.getElementById('popup-ad').classList.add('hidden');

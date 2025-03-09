@@ -64,7 +64,7 @@ body.cart-open {
     font-weight: 700;
     white-space: nowrap;
     overflow: hidden;
-    z-index:999;
+    z-index:99;
     transition: top 0.3s ease-in-out;
 }
 
@@ -134,6 +134,7 @@ body.cart-open {
             0 0 50px #00ff99;
     }
 }
+
 
 .sticky-container{
     position:sticky;
@@ -642,27 +643,70 @@ body.cart-open {
     margin:7%;
     padding: 0%;
 }
-.logo{
-    max-height:90px;
-    width:auto;
-    image-rendering:crisp-edges;
-    image-rendering:-webkit-optimize-contrast;
-    transition:transform 0.3s ease-in-out
+
+/* Wrapper to Position the Effect */
+.logo-wrapper {
+    display: inline-block;
+    position: relative;
+    overflow: hidden; /* Prevents shine overflow */
 }
-.logo:hover{
-    transform:scale(1.1);
-    transition:transform 0.3s ease-in-out
+
+/* Logo Styling */
+.logo {
+    max-height: 90px;
+    width: auto;
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    transition: transform 0.3s ease-in-out;
 }
-@media (max-width:768px){
-    .logo{
-        max-height:70px
+
+/* Hover Effect */
+.logo-wrapper:hover .logo {
+    transform: scale(1.1);
+}
+
+/* Shine Effect */
+.logo-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 250%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0.8) 50%,
+        rgba(255, 255, 255, 0) 70%
+    );
+    transform: skewX(-20deg);
+    animation: shine-effect 6s linear infinite;
+}
+
+/* Shine Animation */
+@keyframes shine-effect {
+    0% {
+        left: -200%;
+    }
+    100% {
+        left: 200%;
     }
 }
-@media (max-width:480px){
-    .logo{
-        max-height:60px
+
+/* Responsive Logo Sizing */
+@media (max-width: 768px) {
+    .logo {
+        max-height: 70px;
     }
 }
+
+@media (max-width: 480px) {
+    .logo {
+        max-height: 60px;
+    }
+}
+
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 .footer {
@@ -897,4 +941,78 @@ body.cart-open {
         width: 180vw;
         max-width: 360px;
     }
+}
+
+
+
+
+
+.cart-preview {
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: 3px 4px black;
+    height: auto;
+}
+
+
+/* Popup Ad - Always on Top */
+.popup-ad {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999; /* Increased z-index */
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s;
+}
+
+.popup-ad.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Popup Content */
+.popup-content {
+    position: relative;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    max-height: 80%;
+    overflow: hidden;
+    z-index: 1000000; /* Ensures content is above overlay */
+}
+
+/* Popup Image */
+.popup-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Close Button */
+.close-popup {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    background: red;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000001; /* Ensures button is on top */
 }
