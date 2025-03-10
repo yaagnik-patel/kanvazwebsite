@@ -66,21 +66,7 @@ const products = {
         size: {
             A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
         }
-    },
-        {
-            name: 'Code in Progress',
-            imageUrl: 'image/Product/Poater/Motivatinal/moti (1).jpg',
-            size: {
-                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
-            }
-        },
-        {
-            name: 'Motivation for Programmers',
-            imageUrl: 'image/Product/Poater/Motivatinal/moti (11).jpg',
-            size: {
-                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
-            }
-        }
+    }
     ],
 
     anime: [
