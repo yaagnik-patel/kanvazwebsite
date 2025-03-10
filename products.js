@@ -61,7 +61,7 @@ const products = {
         }
     },
     {
-        name: 'King Kohli| Kavaz Edition',
+        name: 'King Kohli | Kavaz Edition',
         imageUrl: 'image/Product/Poater/sports/sports (2).webp',
         size: {
             A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
@@ -620,29 +620,44 @@ function showCategory(category) {
                     <button onclick="addPolaroidToCart('${product.name}', '${product.imageUrl}', ${product.price})" class="card-btn add-to-cart">Add to Cart</button>
                 `;
                 productList.appendChild(productElem);
-            } else {
-                // Regular Product Card
+            } else{
                 const defaultSize = Object.keys(product.size)[0]; // Get the first size as default
-                selectedSize[product.name] = defaultSize; // Set default selected size
+selectedSize[product.name] = defaultSize; // Set default selected size
 
-                const productElem = document.createElement('div');
-                productElem.className = 'card';
-                productElem.innerHTML = `
-                    <div class="card-img">
-                        <img src="${product.imageUrl}" alt="${product.name}" class="product-image">
-                    </div>
-                    <h3 class="card-title">${product.name}</h3>
-                    <p class="card-price" id="price-${product.name}">₹${product.size[defaultSize].toFixed(2)}</p>
-                    <div class="size-selection">
-                        ${Object.keys(product.size).map(size => `
-                            <button class="card-btn" onclick="selectSize('${product.name}', '${size}', ${product.size[size]}, this)">
-                                ${size}
-                            </button>
-                        `).join('')}
-                    </div>
-                    <button onclick="addToCart('${product.name}', '${product.imageUrl}')" class="card-btn add-to-cart">Add to Cart</button>
-                `;
-                productList.appendChild(productElem);
+const productElem = document.createElement('div');
+productElem.className = 'card';
+
+// Define the price for A4 and A3 with strikethrough
+const oldPrices = {
+    'A4': 99,
+    'A3': 139,
+    'A4 LANDSCAPE': 50,
+    'A3 LANDSCAPE': 90
+};
+
+// Get the current selected size price
+const currentPrice = product.size[defaultSize];
+const oldPrice = oldPrices[defaultSize] ? `<del class="old-price">₹${oldPrices[defaultSize]}</del>` : '';
+
+productElem.innerHTML = `
+    <div class="card-img">
+        <img src="${product.imageUrl}" alt="${product.name}" class="product-image">
+    </div>
+    <h3 class="card-title">${product.name}</h3>
+    <p class="card-price" id="price-${product.name}">
+        ${oldPrice} <span class="new-price">₹${currentPrice.toFixed(2)}</span>
+    </p>
+    <div class="size-selection">
+        ${Object.keys(product.size).map(size => `
+            <button class="card-btn" onclick="selectSize('${product.name}', '${size}', ${product.size[size]}, this)">
+                ${size}
+            </button>
+        `).join('')}
+    </div>
+    <button onclick="addToCart('${product.name}', '${product.imageUrl}')" class="card-btn add-to-cart">Add to Cart</button>
+`;
+productList.appendChild(productElem);
+
             }
         });
     } else {
@@ -653,7 +668,15 @@ function showCategory(category) {
 // Function to handle size selection and update price
 function selectSize(productName, size, price, button) {
     selectedSize[productName] = size; // Update selected size
-    
+
+    // Define original prices for reference
+    const oldPrices = {
+        'A4': 99,
+        'A3': 139,
+        'A4 LANDSCAPE': 50,
+        'A3 LANDSCAPE': 90
+    };
+
     // Remove 'active' class from all buttons within the parent
     const buttons = button.parentElement.getElementsByClassName('card-btn');
     Array.from(buttons).forEach(btn => btn.classList.remove('active'));
@@ -661,9 +684,20 @@ function selectSize(productName, size, price, button) {
     // Add 'active' class to the clicked button
     button.classList.add('active');
 
-    // Update the displayed price
-    document.getElementById(`price-${productName}`).textContent = `₹${price.toFixed(2)}`;
+    // Get the element for price update
+    const priceElement = document.getElementById(`price-${productName}`);
+
+    // Check if an old price exists for the selected size
+    if (oldPrices[size]) {
+        priceElement.innerHTML = `
+            <del class="old-price">₹${oldPrices[size]}</del> 
+            <span class="new-price">₹${price.toFixed(2)}</span>
+        `;
+    } else {
+        priceElement.innerHTML = `<span class="new-price">₹${price.toFixed(2)}</span>`;
+    }
 }
+
 // Function to add Polaroid to Cart with fixed quantity of 9
 function addPolaroidToCart(productName, imageUrl, unitPrice) {
     const quantity = 9; // Fixed quantity per order
