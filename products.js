@@ -80,26 +80,6 @@ const products = {
             size: {
                 A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
             }
-        },
-        {
-            name: 'Chess Lover',
-            imageUrl: 'image/Product/Poater/Motivatinal/moti (12).jpg',
-            size: {
-                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
-            }
-        },
-        {
-            name: 'DREAM + WORK = SUCCESS',
-            imageUrl: 'image/Product/Poater/Motivatinal/moti (13).jpg',
-            size: {
-                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
-            }
-        },{
-            name: 'E=MC² Einstein Poster – Inspirational Physics Wall Print',
-            imageUrl: 'image/Product/Poater/movie/movie (10).webp',
-            size: {
-                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
-            }
         }
     ],
 
