@@ -52,6 +52,57 @@ const products = {
         }
 
     ],
+
+    sports: [{
+        name: 'Hitman Rohit | Kavaz Edition',
+        imageUrl: 'image/Product/Poater/sports/sports (1).webp',
+        size: {
+            A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+        }
+    },
+    {
+        name: 'King Kohli| Kavaz Edition',
+        imageUrl: 'image/Product/Poater/sports/sports (2).webp',
+        size: {
+            A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+        }
+    },
+        {
+            name: 'Code in Progress',
+            imageUrl: 'image/Product/Poater/Motivatinal/moti (1).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'Motivation for Programmers',
+            imageUrl: 'image/Product/Poater/Motivatinal/moti (11).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'Chess Lover',
+            imageUrl: 'image/Product/Poater/Motivatinal/moti (12).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },
+        {
+            name: 'DREAM + WORK = SUCCESS',
+            imageUrl: 'image/Product/Poater/Motivatinal/moti (13).jpg',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        },{
+            name: 'E=MC² Einstein Poster – Inspirational Physics Wall Print',
+            imageUrl: 'image/Product/Poater/movie/movie (10).webp',
+            size: {
+                A4: 50, A3: 90, 'A4 LANDSCAPE': 50, 'A3 LANDSCAPE': 90
+            }
+        }
+    ],
+
     anime: [
         {
             name: 'Goku SSJ1 vs Beerus',

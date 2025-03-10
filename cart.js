@@ -140,13 +140,21 @@ function proceedToCheckout() {
         return;
     }
 
-    let message = "Hello, I would like to place an order:\n\n";
-    cartItems.forEach(item => {
-        message += `- ${item.name} (Size: ${item.size}): ₹${item.price.toFixed(2)} x ${item.quantity}\n`;
-    });
+    let message = "*New Order Received!*\n\n";
 
-    const totalPrice = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
-    message += `\nTotal Price: ₹${totalPrice.toFixed(2)}`;
+cartItems.forEach((item, index) => {
+    message += `*Item ${index + 1}:* ${item.name}\n`;
+    message += `Size: ${item.size}\n`;
+    message += `Price: ₹${item.price.toFixed(2)}\n`;
+    message += `Quantity: ${item.quantity}\n\n`;
+});
+
+const totalPrice = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+message += `*Total Price:* ₹${totalPrice.toFixed(2)}\n\n`;
+message += "*Please confirm the order!*";
+
+    
 
     const whatsappURL = `https://wa.me/+917046145944?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
