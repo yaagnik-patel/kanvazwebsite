@@ -172,9 +172,9 @@ h2 {
 
 /* Checkout Button */
 .checkout-btn {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
+    background-color:#009145;
+    color:white;
+    border: 2px solid #000;
     border-radius: 6px;
     box-shadow: 5px 4px 0 #57b784;
     padding: 10px 40px;

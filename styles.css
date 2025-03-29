@@ -7,6 +7,7 @@ body {
     -webkit-user-select: none; /* For Safari */
     -moz-user-select: none; /* For Firefox */
     -ms-user-select: none; /* For Edge */
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 @font-face {
     font-family: 'Bebas Neue';
@@ -43,7 +44,8 @@ body {
  body{
     background:#fff;
     font-family:'Nunito',sans-serif;
-    margin:1%
+    margin:1%;
+    animation: fadeIn 1.5s ease-in-out forwards;
 }
 @media screen and (max-width:430px){
     body{
@@ -57,17 +59,20 @@ body {
 }
 @media screen and (max-width:540px){
     body{
-        font-size:16px
+        font-size:16px;
+        animation: fadeIn 1.5s ease-in-out forwards;
     }
 }
 @media screen and (max-width:600px){
     body{
-        font-size:17px
+        font-size:17px;
+        animation: fadeIn 1.5s ease-in-out forwards;
     }
 }
 @media screen and (max-width:720px){
     body{
-        font-size:18px
+        font-size:18px;
+        animation: fadeIn 1.5s ease-in-out forwards;
     }
 }
 @media screen and (min-width:1024px){
