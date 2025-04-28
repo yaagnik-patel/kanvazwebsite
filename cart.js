@@ -132,7 +132,6 @@ function updateCartCount() {
         cartCountElem.textContent = cartItems.reduce((sum, item) => sum + item.quantity, 0);
     }
 }
-
 // Proceed to checkout (WhatsApp Order)
 function proceedToCheckout() {
     if (cartItems.length === 0) {
@@ -142,20 +141,24 @@ function proceedToCheckout() {
 
     let message = "*New Order Received!*\n\n";
 
-cartItems.forEach((item, index) => {
-    message += `*Item ${index + 1}:* ${item.name}\n`;
-    message += `Size: ${item.size}\n`;
-    message += `Price: ₹${item.price.toFixed(2)}\n`;
-    message += `Quantity: ${item.quantity}\n\n`;
-});
+    cartItems.forEach((item, index) => {
+        message += `*Item ${index + 1}:* ${item.name}\n`;
+        message += `Size: ${item.size}\n`;
+        message += `Price: ₹${item.price.toFixed(2)}\n`;
+        message += `Quantity: ${item.quantity}\n\n`;
+    });
 
-const totalPrice = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    const totalPrice = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
-message += `*Total Price:* ₹${totalPrice.toFixed(2)}\n\n`;
-message += "*Please confirm the order!*";
-
-    
+    message += `*Total Price:* ₹${totalPrice.toFixed(2)}\n\n`;
+    message += "*Please confirm the order!*";
 
     const whatsappURL = `https://wa.me/+917046145944?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
+
+    // Clear the cart after proceeding to checkout
+    cartItems = [];
+    updateCartStorage();
+    updateCartDisplay();
+    updateCartCount();
 }
